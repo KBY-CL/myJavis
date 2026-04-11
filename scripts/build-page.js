@@ -38,9 +38,10 @@ const CATEGORY_LABELS = {
   claude:    '🟠 Claude 업데이트',
   it_issues: '🔥 IT 핫이슈',
   webdev:    '💻 웹개발',
+  aws:       '☁️ AWS 클라우드',
 };
 
-const CATEGORY_ORDER = ['ai', 'claude', 'it_issues', 'webdev'];
+const CATEGORY_ORDER = ['ai', 'claude', 'it_issues', 'webdev', 'aws'];
 
 const DAY_NAMES_KO = ['일', '월', '화', '수', '목', '금', '토'];
 

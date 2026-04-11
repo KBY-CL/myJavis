@@ -15,9 +15,10 @@ that don't fit into AI/Claude/Webdev buckets.
 ## Scope — IT 핫이슈 only
 
 Collect news about:
-- **빅테크 동향** — Apple, Microsoft, Google, Meta, Amazon 사업 뉴스
+- **빅테크 동향** — Apple, Microsoft, Google, Meta, Amazon 사업 뉴스 (단, AWS 자체 서비스 뉴스는 제외)
 - **반도체** — TSMC, Samsung, Intel, Nvidia (AI 칩 제외), 파운드리
-- **클라우드 인프라** — AWS, Azure, GCP, 데이터센터, CDN
+- **데이터센터 / CDN** — 일반 인프라 동향, 엣지 컴퓨팅 (AWS 단독 뉴스 제외)
+- **Azure / GCP** — Microsoft·Google 클라우드 단독 뉴스 (AWS는 별도 카테고리)
 - **사이버보안** — 대규모 침해사고, CVE, 보안 패치
 - **M&A · 투자** — 테크 기업 인수합병, 시리즈 펀딩
 - **규제 / 정책** — 반독점 소송, EU Digital Act, 국가별 규제
@@ -28,6 +29,7 @@ Collect news about:
 - 새로운 AI 모델 · 연구 → `researcher-ai`가 담당
 - Claude / Anthropic → `researcher-claude`가 담당
 - React / Next.js / JavaScript 프레임워크 → `researcher-webdev`가 담당
+- **AWS 단독 뉴스** (서비스 출시, 가격 변경, re:Invent, AWS 파트너십) → `researcher-aws`가 담당
 
 ## Search queries
 

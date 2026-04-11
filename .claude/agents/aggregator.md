@@ -14,17 +14,18 @@ summarize, or translate content — you only combine structured data.
 
 ## Inputs
 
-Read these four files in the project root (`C:\toy-project\news\it-news-bot-agents`):
+Read these **five** files in the project root (`C:\toy-project\news\it-news-bot-agents`):
 
 - `data/news-ai-{YYYY-MM-DD}.json`
 - `data/news-claude-{YYYY-MM-DD}.json`
 - `data/news-it-{YYYY-MM-DD}.json`
 - `data/news-webdev-{YYYY-MM-DD}.json`
+- `data/news-aws-{YYYY-MM-DD}.json`
 
 Each file has the shape:
 ```json
 {
-  "category": "ai" | "claude" | "it_issues" | "webdev",
+  "category": "ai" | "claude" | "it_issues" | "webdev" | "aws",
   "date": "2026-04-11",
   "collectedAt": "...",
   "articles": [ ... ]
@@ -32,7 +33,7 @@ Each file has the shape:
 ```
 
 If any file is missing, log a warning but proceed with the ones that exist.
-Only abort if **all four** are missing.
+Only abort if **all five** are missing.
 
 ## Output
 
@@ -42,20 +43,21 @@ Write `data/news-{YYYY-MM-DD}.json` with this consolidated shape:
 {
   "date": "2026-04-11",
   "aggregatedAt": "2026-04-11T08:05:00+09:00",
-  "totalArticles": 11,
+  "totalArticles": 12,
   "categories": {
     "ai":        [ ... articles from news-ai-*.json ],
     "claude":    [ ... articles from news-claude-*.json ],
     "it_issues": [ ... articles from news-it-*.json ],
-    "webdev":    [ ... articles from news-webdev-*.json ]
+    "webdev":    [ ... articles from news-webdev-*.json ],
+    "aws":       [ ... articles from news-aws-*.json ]
   }
 }
 ```
 
 ## Workflow
 
-1. **Discover files**: Use `ls data/news-*-{date}.json` (or Glob) to find the 4
-   category files for the given date.
+1. **Discover files**: Use `ls data/news-*-{date}.json` (or Glob) to find the 5
+   category files for the given date (ai, claude, it, webdev, aws).
 2. **Read each file** with Read tool and parse JSON.
 3. **Merge**: Build the consolidated `categories` object. If a category file
    is missing, set that category to `[]` and log which one is missing.
@@ -80,8 +82,8 @@ Confirm the output matches expectations before reporting success.
 
 ## Error handling
 
-- **All 4 files missing** → Report error, do not create output file, exit with failure message.
-- **1-3 files missing** → Log warning (which categories are missing), create output with empty arrays for missing categories.
+- **All 5 files missing** → Report error, do not create output file, exit with failure message.
+- **1-4 files missing** → Log warning (which categories are missing), create output with empty arrays for missing categories.
 - **JSON parse error in any input file** → Log the specific file and error, continue with valid files.
 - **Date mismatch between files** → Use the majority date, log a warning.
 
@@ -95,7 +97,7 @@ Confirm the output matches expectations before reporting success.
 ## Report
 
 완료 후 다음을 보고:
-- 입력 파일 4개의 존재 여부와 각 파일의 article 수
+- 입력 파일 5개(ai/claude/it/webdev/aws)의 존재 여부와 각 파일의 article 수
 - 통합된 `totalArticles`
 - 중복 제거된 기사 수 (있었다면)
 - 출력 파일 경로

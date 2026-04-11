@@ -17,7 +17,7 @@ Telegram message, and structured data for the daily HTML archive.
 ## Input
 
 Read `data/formatted-{YYYY-MM-DD}.json` (produced by the `formatter` agent).
-It contains the pre-selected top ~10 articles across 4 categories with this
+It contains the pre-selected top ~10 articles across **5 categories** with this
 shape:
 
 ```json
@@ -37,7 +37,8 @@ shape:
     ],
     "claude":    [ ... ],
     "it_issues": [ ... ],
-    "webdev":    [ ... ]
+    "webdev":    [ ... ],
+    "aws":       [ ... ]
   }
 }
 ```
@@ -74,7 +75,8 @@ personal daily webpage. Schema:
     ],
     "claude":    [ ... ],
     "it_issues": [ ... ],
-    "webdev":    [ ... ]
+    "webdev":    [ ... ],
+    "aws":       [ ... ]
   }
 }
 ```
@@ -84,10 +86,11 @@ personal daily webpage. Schema:
 - `originalTitle`: formatted JSON의 원문 제목 그대로 복사
 - `url`, `source`, `relevanceScore`: 원본 그대로 복사
 - `dayOfWeek`: '월','화','수','목','금','토','일' 중 하나
+- 카테고리 키 순서: `ai` → `claude` → `it_issues` → `webdev` → `aws`
 
 ### 2. `data/message-{YYYY-MM-DD}.txt` — 텔레그램 전송용 MarkdownV2
 
-Format (정확히 이 템플릿):
+Format (정확히 이 템플릿, 5개 카테고리 순서 고정):
 
 ```
 📰 *IT 뉴스 브리핑* · {YYYY\.MM\.DD} \({요일}\)
@@ -109,7 +112,13 @@ Format (정확히 이 템플릿):
 
 💻 *웹개발*
 • ...
+
+☁️ *AWS 클라우드*
+• ...
 ```
+
+> 카테고리 헤더 5개를 모두 출력하되, formatted JSON에 해당 카테고리 기사가
+> 0건이라면 그 헤더 섹션은 통째로 생략합니다.
 
 ## MarkdownV2 이스케이프 (매우 중요 — 이거 틀리면 전송 실패)
 

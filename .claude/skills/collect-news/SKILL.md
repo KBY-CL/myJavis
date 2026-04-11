@@ -16,12 +16,12 @@ GitHub Pages 배포를 수행합니다.
 
 ## 핵심 특징
 
-- **병렬 수집**: 4개의 카테고리별 researcher가 동시에 실행되어 단일 researcher
+- **병렬 수집**: **5개**의 카테고리별 researcher가 동시에 실행되어 단일 researcher
   대비 수집 시간이 크게 단축됩니다.
 - **외부 LLM API 0회**: 뉴스 수집·요약은 모두 Claude Code 세션 안의 서브에이전트가
   처리합니다. `.env`에는 Telegram 관련 키만 필요합니다.
 - **최대 10건**: formatter가 relevanceScore 기준으로 상위 10건을 선별해 정보
-  과잉을 방지합니다.
+  과잉을 방지합니다 (5 카테고리 × 평균 2건).
 - **개인 웹페이지**: 매일 `docs/daily/{date}.html` 이 생성되며, `docs/index.html`
   이 최신 일간 + 주간 아카이브 목록을 보여줍니다.
 
@@ -41,37 +41,39 @@ GitHub Pages 배포를 수행합니다.
 
 ### Step 0: 진행 상황 안내
 
-수집을 시작하기 전에 사용자에게 4개 카테고리가 병렬로 수집될 것임을 알립니다:
+수집을 시작하기 전에 사용자에게 5개 카테고리가 병렬로 수집될 것임을 알립니다:
 
 ```
 병렬 수집 시작 (오늘: {YYYY-MM-DD} {요일})
-  - [researcher-ai] AI 뉴스 수집 중 (목표: 2~3건)
-  - [researcher-claude] Claude 업데이트 수집 중 (목표: 2~3건)
-  - [researcher-it] IT 핫이슈 수집 중 (목표: 2~3건)
-  - [researcher-webdev] 웹개발 뉴스 수집 중 (목표: 2~3건)
+  - [researcher-ai]      🤖 AI 뉴스 수집 중 (목표: 2~3건)
+  - [researcher-claude]  🟠 Claude 업데이트 수집 중 (목표: 2~3건)
+  - [researcher-it]      🔥 IT 핫이슈 수집 중 (목표: 2~3건)
+  - [researcher-webdev]  💻 웹개발 뉴스 수집 중 (목표: 2~3건)
+  - [researcher-aws]     ☁️ AWS 클라우드 수집 중 (목표: 1~2건)
 총 10건 이하로 제한됩니다.
 ```
 
 ### Step 1: 병렬 뉴스 수집
 
-**반드시 한 번의 응답 안에서 4개 Agent 툴 호출을 동시에** 실행합니다
+**반드시 한 번의 응답 안에서 5개 Agent 툴 호출을 동시에** 실행합니다
 (병렬 처리의 핵심). 각 researcher는 자기 카테고리만 수집합니다.
 
 - `@agent-researcher-ai` → `data/news-ai-{date}.json` (최대 3건)
 - `@agent-researcher-claude` → `data/news-claude-{date}.json` (최대 3건)
 - `@agent-researcher-it` → `data/news-it-{date}.json` (최대 3건)
 - `@agent-researcher-webdev` → `data/news-webdev-{date}.json` (최대 3건)
+- `@agent-researcher-aws` → `data/news-aws-{date}.json` (최대 2건)
 
-4개 모두 완료되기를 기다린 뒤 각 JSON 파일이 생성되었는지 확인합니다.
-하나라도 실패하면 사용자에게 보고하되 파이프라인은 나머지 3개로 계속 진행할 수 있습니다.
+5개 모두 완료되기를 기다린 뒤 각 JSON 파일이 생성되었는지 확인합니다.
+하나라도 실패하면 사용자에게 보고하되 파이프라인은 나머지로 계속 진행할 수 있습니다.
 
 ### Step 2: 통합 (aggregator)
 
 @agent-aggregator 에게 다음을 요청:
 
 > `data/news-ai-{date}.json`, `data/news-claude-{date}.json`,
-> `data/news-it-{date}.json`, `data/news-webdev-{date}.json` 4개 파일을
-> `data/news-{date}.json` 하나로 병합하세요.
+> `data/news-it-{date}.json`, `data/news-webdev-{date}.json`,
+> `data/news-aws-{date}.json` **5개 파일**을 `data/news-{date}.json` 하나로 병합하세요.
 
 결과 확인: `data/news-{date}.json` 이 존재하며 totalArticles 가 합계와 일치.
 
@@ -125,7 +127,7 @@ notifier가 실패를 보고하면:
 ```
 ✅ 일일 뉴스 브리핑 완료 · {YYYY-MM-DD} {요일}
 
-수집: {n}건 (ai {n1}, claude {n2}, it {n3}, webdev {n4})
+수집: {n}건 (ai {n1}, claude {n2}, it {n3}, webdev {n4}, aws {n5})
 텔레그램: message_id={id} (fallback={true|false})
 일간 페이지: docs/daily/{date}.html
 {금요일인 경우: 주간 아카이브: docs/{year}/week-{NN}.html, 배포: {commitSha}}
@@ -143,14 +145,14 @@ notifier가 실패를 보고하면:
 ## 데이터 흐름 요약
 
 ```
-[parallel]                    [sequential]
+[parallel ×5]                 [sequential]
   researcher-ai                 aggregator → formatter → updater → notifier
   researcher-claude                                         ↓
   researcher-it                               build-page.js (--mode=daily)
   researcher-webdev                                         ↓
-         ↓                                      docs/daily/{date}.html
-  data/news-{cat}-{date}.json                   docs/index.html
-                                                          ↓
+  researcher-aws                              docs/daily/{date}.html
+         ↓                                    docs/index.html
+  data/news-{cat}-{date}.json                              ↓
                                            (금) --mode=both + deploy.js
                                                           ↓
                                                GitHub Pages

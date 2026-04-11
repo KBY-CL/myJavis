@@ -21,12 +21,13 @@ Read `data/news-{YYYY-MM-DD}.json` (the aggregator's output). Expected shape:
 {
   "date": "2026-04-11",
   "aggregatedAt": "...",
-  "totalArticles": 11,
+  "totalArticles": 12,
   "categories": {
     "ai":        [ ... ],
     "claude":    [ ... ],
     "it_issues": [ ... ],
-    "webdev":    [ ... ]
+    "webdev":    [ ... ],
+    "aws":       [ ... ]
   }
 }
 ```
@@ -50,9 +51,10 @@ Write `data/formatted-{YYYY-MM-DD}.json` with this shape:
         "relevanceScore": 9
       }
     ],
-    "claude": [ ... ],
+    "claude":    [ ... ],
     "it_issues": [ ... ],
-    "webdev": [ ... ]
+    "webdev":    [ ... ],
+    "aws":       [ ... ]
   }
 }
 ```
@@ -67,39 +69,43 @@ Write `data/formatted-{YYYY-MM-DD}.json` with this shape:
 
 ## Selection algorithm (최대 10건)
 
-목표: 4개 카테고리에서 **총 10건 이하**, 카테고리 균형을 유지.
+목표: **5개 카테고리**에서 총 **10건 이하**, 카테고리 균형 유지 (각 카테고리 평균 2건).
 
 **Step 1 — 카테고리별 정렬**
 각 카테고리 배열을 `relevanceScore` **내림차순**으로 정렬.
 
-**Step 2 — 균형 쿼터 적용**
-각 카테고리에서 최대 **3건**, 최소 **1건**을 뽑는다 (기사가 없으면 0건).
+**Step 2 — 최소 보장 1건씩 확보**
+5개 카테고리 각각에서 점수 최상위 1건을 먼저 선택 (해당 카테고리에 기사가 있을 때).
+이렇게 5건 확보.
 
-**Step 3 — 점수 기반 상위 선택**
-카테고리당 쿼터 상한 내에서, 남은 슬롯(10 - 이미 선택)이 다 찰 때까지 전체 상위 점수순으로 선택.
+**Step 3 — 남은 5슬롯을 점수 내림차순으로 채움**
+모든 카테고리의 남은 기사를 합쳐 점수 내림차순으로 정렬한 뒤, 한 카테고리당
+최대 **3건** 한도 내에서 상위 5건을 선택.
 
 ### 선택 예시
 
 입력:
 - ai: 3건 (점수 10, 9, 9)
 - claude: 3건 (10, 10, 9)
-- it_issues: 3건 (10, 9, 8)
-- webdev: 3건 (9, 8, 8)
+- it_issues: 2건 (10, 9)
+- webdev: 2건 (10, 10)
+- aws: 2건 (9, 8)
 = 총 12건, 목표 10건
 
 선택:
-1. 각 카테고리에서 **1건씩** 먼저 확보 (4건)
-2. 남은 6슬롯을 점수 내림차순으로 채움:
-   - ai #2 (9), claude #2 (10), it #2 (9), webdev #2 (8)
-   - ai #3 (9), claude #3 (9)
-   - → 총 10건, it/webdev 3번째는 제외
+1. 각 카테고리에서 1건씩: ai #1(10), claude #1(10), it #1(10), webdev #1(10), aws #1(9) → 5건
+2. 남은 7건 중 점수 내림차순 상위 5건:
+   - claude #2 (10), webdev #2 (10), ai #2 (9), claude #3 (9), it #2 (9) → 5건
+   - 제외: ai #3 (9), aws #2 (8)
+3. **최종 10건**: ai 2, claude 3, it 2, webdev 2, aws 1
 
 ### 카테고리별 최종 쿼터 (목표)
-- `ai`: 2-3건
-- `claude`: 2-3건
-- `it_issues`: 2-3건
-- `webdev`: 1-2건
-- **합계 ≤ 10**
+- `ai`: 1-3건
+- `claude`: 1-3건
+- `it_issues`: 1-3건
+- `webdev`: 1-3건
+- `aws`: 1-2건 (AWS는 임팩트 있는 발표가 적은 날엔 1건)
+- **합계 ≤ 10**, 가능하면 **5 카테고리 모두 1건 이상**
 
 입력이 10건 미만이면 있는 것만 모두 사용하고 `totalSelected`에 실제 개수 기록.
 
@@ -121,7 +127,7 @@ Write `data/formatted-{YYYY-MM-DD}.json` with this shape:
 - WebSearch / WebFetch 금지 — 순수 데이터 가공 에이전트.
 - 새 기사 추가 금지 — 선택만 수행.
 - 최대 10건 준수 — 초과 금지.
-- 모든 카테고리에 기사가 있다면 **최소 1건씩은 포함** (0건 카테고리는 그 카테고리에 원본이 없었던 경우만 허용).
+- 5개 카테고리(ai/claude/it_issues/webdev/aws)에 기사가 있다면 **최소 1건씩은 포함** (0건 카테고리는 그 카테고리에 원본이 없었던 경우만 허용).
 
 ## Report
 
