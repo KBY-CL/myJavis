@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-04-11 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 4월 11일 (토) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Meta Muse Spark 공개<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Meta Superintelligence Labs가 Muse Spark 모델을 출시했다.</p>
+            <p class="summary-line">네이티브 멀티모달 추론, 멀티 에이전트 오케스트레이션 탑재.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">GPT-5.4 엔터프라이즈 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">OpenAI가 네이티브 Computer Use 탑재 GPT-5.4를 출시했다.</p>
+            <p class="summary-line">자동화 테스트 성공률 75%, 인간 기준 72.4%를 최초 초과.</p>
+            <p class="article-meta">
+              <span class="source">Fortune</span> · 
+              <a href="https://fortune.com/2026/03/05/openai-new-model-gpt5-4-enterprise-agentic-anthropic/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Gemma 4 오픈 모델 공개<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Google이 Gemma 4 4종 모델을 Apache 2.0 라이선스로 공개했다.</p>
+            <p class="summary-line">31B 모델이 400B급 경쟁 모델을 벤치마크에서 능가.</p>
+            <p class="article-meta">
+              <span class="source">Google Blog</span> · 
+              <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Project Glasswing 출범<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">12개 기술 기업 참여 AI 사이버보안 이니셔티브가 출범했다.</p>
+            <p class="summary-line">Claude Mythos가 수천 개 고위험 보안 결함을 자율 탐지.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/glasswing" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Google·Broadcom 컴퓨트 계약<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Anthropic이 차세대 TPU 기가와트 규모 컴퓨트 계약을 체결했다.</p>
+            <p class="summary-line">ARR이 90억 달러에서 300억 달러 이상으로 급증했다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/google-broadcom-partnership-compute" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Code 4월 업데이트<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Claude Code v2.1.87~98 연속 출시, MCP 500K 문자 지원 추가.</p>
+            <p class="summary-line">Managed Agents와 &#39;ant&#39; CLI 공개 베타 출시.</p>
+            <p class="article-meta">
+              <span class="source">Releasebot / Anthropic</span> · 
+              <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">TSMC Q1 최고 매출 달성<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">TSMC Q1 매출 356억 달러, 전년 대비 35% 급증해 최고치 기록.</p>
+            <p class="summary-line">2nm 공정 용량을 2027년까지 두 배 확대할 계획을 발표.</p>
+            <p class="article-meta">
+              <span class="source">CNBC</span> · 
+              <a href="https://www.cnbc.com/2026/04/10/tsmc-q1-record-revenue-ai-chip-demand-strong.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Fortinet 긴급 취약점 패치<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">FortiClient EMS CVE-2026-35616(CVSS 9.1) 실제 공격 악용 중.</p>
+            <p class="summary-line">CISA KEV 등록, 연방 기관 4월 9일까지 패치 적용 의무화.</p>
+            <p class="article-meta">
+              <span class="source">The Hacker News</span> · 
+              <a href="https://thehackernews.com/2026/04/fortinet-patches-actively-exploited-cve.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js 16.2 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">next dev 시작 속도가 Next.js 16.1 대비 87% 빨라졌다.</p>
+            <p class="summary-line">RSC 렌더링 25~60% 향상, Adapters API 정식 안정화.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/next-16-2" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">TypeScript 6.0 발표<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">TypeScript 6.0은 JS 기반 마지막 릴리스, Go 기반 7.0 전환 준비.</p>
+            <p class="summary-line">strict 기본값 true로 변경, ES3/ES5 및 AMD/UMD 지원 종료.</p>
+            <p class="article-meta">
+              <span class="source">TypeScript Blog (Microsoft)</span> · 
+              <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>

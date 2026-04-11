@@ -1,0 +1,19 @@
+{
+  "name": "it-news-bot-agents",
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "send": "node scripts/send-telegram.js",
+    "build-page": "node scripts/build-page.js",
+    "deploy": "node scripts/deploy.js",
+    "check": "node --check scripts/send-telegram.js && node --check scripts/build-page.js && node --check scripts/deploy.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0",
+    "simple-git": "^3.24.0",
+    "dotenv": "^16.4.0"
+  }
+}

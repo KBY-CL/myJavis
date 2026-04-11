@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 IT 뉴스 아카이브</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+
+    section.index-section { margin-bottom: 2.5rem; }
+    section.index-section h2 {
+      font-size: 1.15rem;
+      padding: 0.5rem 0.85rem;
+      background: var(--heading-bg);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 1rem;
+    }
+    ul.entry-list { list-style: none; padding: 0; }
+    ul.entry-list li {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--card-bg);
+      margin-bottom: 0.6rem;
+      padding: 0.85rem 1.1rem;
+    }
+    ul.entry-list li.empty { font-style: italic; color: var(--muted); background: transparent; border: 1px dashed var(--border); }
+    ul.entry-list li a {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    ul.entry-list li a:hover { text-decoration: underline; }
+    ul.entry-list li .meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.2rem; }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <h1>📰 IT 뉴스 아카이브</h1>
+    <p class="subtitle">매일 아침 AI · Claude · IT · 웹개발 브리핑</p>
+  </header>
+
+  <section class="index-section">
+    <h2>🗓️ 일간 브리핑</h2>
+    <!-- DAILY_LINKS_START -->
+    <ul class="entry-list" id="daily-list">
+    <li>
+      <a href="./daily/2026-04-11.html"><strong>2026-04-11</strong> (토)</a>
+      <div class="meta">10건</div>
+    </li>
+    </ul>
+    <!-- DAILY_LINKS_END -->
+  </section>
+
+  <section class="index-section">
+    <h2>📚 주간 아카이브</h2>
+    <!-- WEEK_LINKS_START -->
+    <ul class="entry-list" id="weekly-list">
+    <li class="empty">아직 등록된 주간 아카이브가 없습니다.</li>
+    </ul>
+    <!-- WEEK_LINKS_END -->
+  </section>
+
+  <footer>
+    <p>자동화 봇이 생성한 뉴스 아카이브입니다.</p>
+  </footer>
+</body>
+</html>
