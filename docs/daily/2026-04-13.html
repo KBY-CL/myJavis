@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-04-13 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 4월 13일 (월) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">OpenAI, 122조 투자 유치<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">OpenAI가 1,220억 달러 펀딩을 완료해 기업가치 8,520억 달러를 기록했다.</p>
+            <p class="summary-line">GPT-5.4(100만 토큰 컨텍스트)가 에이전틱 사용 급증을 이끌며 IPO도 검토 중이다.</p>
+            <p class="article-meta">
+              <span class="source">OpenAI (Official Blog)</span> · 
+              <a href="https://openai.com/index/accelerating-the-next-phase-ai/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Gemini 3.1 Pro 글로벌 출시<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Google이 Gemini 3.1 Pro를 전 세계에 출시했다. 100만 토큰 컨텍스트, 입력 $2/백만 토큰이다.</p>
+            <p class="summary-line">VS Code·IntelliJ Code Assist 에이전트 모드에서도 사용 가능하며 Computer Use도 지원한다.</p>
+            <p class="article-meta">
+              <span class="source">Google AI for Developers</span> · 
+              <a href="https://ai.google.dev/gemini-api/docs/changelog" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Meta, Muse Spark 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Meta가 독자 폐쇄형 AI 모델 Muse Spark를 공개했다. GPT-5.4·Claude Sonnet 4.6과 벤치마크 동등 수준이다.</p>
+            <p class="summary-line">멀티모달·멀티에이전트 지원, 출시 하루 만에 Meta AI 앱 다운로드 87% 급증했다.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Anthropic, Glasswing 출범<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Anthropic이 AWS·Apple·Google·Microsoft 등 12개사와 AI 사이버보안 이니셔티브 Project Glasswing을 출범시켰다.</p>
+            <p class="summary-line">신모델 Claude Mythos Preview가 취약점 벤치마크 83.1%를 달성해 제로데이 수천 건을 발견했다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/glasswing" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Anthropic 컴퓨팅 대폭 확장<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Anthropic이 Google·Broadcom과 협력해 2027년부터 멀티 기가와트 규모 TPU 인프라를 구축한다.</p>
+            <p class="summary-line">ARR이 300억 달러 돌파, 연 100만 달러 이상 지출 기업 고객은 500개에서 1,000개 이상으로 두 배 증가했다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/google-broadcom-partnership-compute" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Intel, Terafab 합류<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Intel이 Elon Musk의 Terafab 프로젝트에 파운드리 파트너로 참여해 18A 공정을 제공한다.</p>
+            <p class="summary-line">텍사스 오스틴 메가팹에서 Tesla AI6 칩을 2027년 양산하며 연 1테라와트 AI 연산을 목표로 한다.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/04/07/intel-signs-on-to-elon-musks-terafab-chips-project/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Vite 8.0 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Vite 8이 Rust 기반 Rolldown을 단일 번들러로 채택해 프로덕션 빌드 속도가 10~30배 향상됐다.</p>
+            <p class="summary-line">통합 DevTools, WebAssembly SSR, 새 플러그인 레지스트리(registry.vite.dev)가 함께 제공된다.</p>
+            <p class="article-meta">
+              <span class="source">Vite Official Blog</span> · 
+              <a href="https://vite.dev/blog/announcing-vite8" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Next.js 16.2.3 보안 패치<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Next.js 16.2.3이 CVE-2026-23869 보안 패치와 HMR 오류·ISR 보고 버그 수정을 포함해 출시됐다.</p>
+            <p class="summary-line">styled-jsx 경쟁 조건도 해결됐으며 카나리 빌드에는 TypeScript 경로 해석 개선이 포함됐다.</p>
+            <p class="article-meta">
+              <span class="source">GitHub — vercel/next.js</span> · 
+              <a href="https://github.com/vercel/next.js/releases/tag/v16.2.3" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">TypeScript 6.0 발표<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">TypeScript 6.0이 strict 모드 기본 활성화, ESM 기본값 적용, 증분 빌드 40~60% 속도 개선을 제공한다.</p>
+            <p class="summary-line">TypeScript 7.0은 Go로 재작성 예정이며 마이그레이션 보조 플래그 --stableTypeOrdering이 도입됐다.</p>
+            <p class="article-meta">
+              <span class="source">TypeScript Blog (Microsoft DevBlogs)</span> · 
+              <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AWS DevOps Agent GA 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">AWS DevOps Agent가 정식 출시됐다. AWS·멀티클라우드·온프레미스 인시던트를 자동으로 조사·해결·예방한다.</p>
+            <p class="summary-line">Azure·온프레미스 조사, 커스텀 에이전트 스킬, 맞춤형 차트·보고서 기능이 새로 추가됐다.</p>
+            <p class="article-meta">
+              <span class="source">AWS What&#39;s New</span> · 
+              <a href="https://aws.amazon.com/about-aws/whats-new/2026/03/aws-devops-agent-generally-available/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
