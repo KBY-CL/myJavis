@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-04-15 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 4월 15일 (수) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Gemma 4 공개<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Google DeepMind가 31B 모델 Gemma 4를 공개했다. AIME 수학 89.2%, 코딩 80.0% 달성.</p>
+            <p class="summary-line">비전·오디오 멀티모달, 256K 컨텍스트, 140개 이상 언어 지원. Apache 2.0 오픈소스.</p>
+            <p class="article-meta">
+              <span class="source">Google Blog</span> · 
+              <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Llama 4 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Meta가 MoE 아키텍처 기반 멀티모달 오픈 모델 Llama 4 Scout·Maverick을 출시했다.</p>
+            <p class="summary-line">Scout는 1,000만 토큰 컨텍스트로 Gemma 3 등을 앞서고 Hugging Face에서 무료 공개.</p>
+            <p class="article-meta">
+              <span class="source">Meta AI Blog</span> · 
+              <a href="https://ai.meta.com/blog/llama-4-multimodal-intelligence/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Code v2.1.108<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">1시간 프롬프트 캐시 TTL, /recap 명령어, 슬래시 커맨드 자동 탐색 기능이 추가됐다.</p>
+            <p class="summary-line">4월 10~14일 v2.1.101부터 v2.1.108까지 가속화된 릴리즈 연속 출시됐다.</p>
+            <p class="article-meta">
+              <span class="source">GitHub / Anthropic</span> · 
+              <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.108" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">TSMC 1분기 최고 매출<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">TSMC가 1분기 356억 달러 매출로 전년비 35% 성장, 사상 최고치를 경신했다.</p>
+            <p class="summary-line">AI 반도체 수요에 힘입어 4분기 연속 순익 신기록 전망. 연간 설비투자 520~560억 달러.</p>
+            <p class="article-meta">
+              <span class="source">CNBC</span> · 
+              <a href="https://www.cnbc.com/2026/04/10/tsmc-q1-record-revenue-ai-chip-demand-strong.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">iPhone Fold 양산 지연<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Apple 최초 폴더블 iPhone 양산이 6월에서 8월 초로 1~2개월 미뤄졌다.</p>
+            <p class="summary-line">가을 출시 계획은 유지되나 초기 물량 부족 예상. 가격 2,000~2,500달러 전망.</p>
+            <p class="article-meta">
+              <span class="source">MacRumors</span> · 
+              <a href="https://www.macrumors.com/2026/04/13/iphone-fold-production-pushed-back/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">4월 대규모 데이터 유출<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Adobe, Basic-Fit, Booking.com 등 15건 이상의 대형 데이터 침해 사고가 발생했다.</p>
+            <p class="summary-line">ShinyHunters·Qilin·Interlock 등 랜섬웨어 그룹이 연루. 의료·소비자 플랫폼 피해 심각.</p>
+            <p class="article-meta">
+              <span class="source">SharkStriker</span> · 
+              <a href="https://sharkstriker.com/blog/april-2026-data-breaches/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js 16 업그레이드<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Next.js 16은 Turbopack을 기본 번들러로 채택하고 React 19.2를 통합했다.</p>
+            <p class="summary-line">동기 Request API 완전 제거, middleware→proxy 이름 변경 등 주요 Breaking Change 포함.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Official Docs</span> · 
+              <a href="https://nextjs.org/docs/app/guides/upgrading/version-16" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Chrome 147 신기능<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">element-scoped View Transitions로 임의 요소에 동시 다중 전환 효과를 적용할 수 있다.</p>
+            <p class="summary-line">CSS contrast-color()와 border-shape, Math.sumPrecise, Web Printing API도 추가됐다.</p>
+            <p class="article-meta">
+              <span class="source">Web Standards</span> · 
+              <a href="https://web-standards.dev/news/2026/04/chrome-147/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">S3 Files GA 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Amazon S3 Files가 전 상용 리전에서 GA됐다. S3 버킷을 NFS v4.1+ 파일시스템으로 마운트 가능.</p>
+            <p class="summary-line">약 1ms 지연 시간, 파일시스템·S3 API 동시 접근 지원. AI·ML 워크로드에 최적화.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">AWS 에이전트 2종 GA<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">AWS DevOps Agent와 Security Agent가 GA됐다. DevOps Agent는 MTTR 최대 75% 단축.</p>
+            <p class="summary-line">Security Agent는 펜테스트 비용 50% 이상 절감. App Runner·WorkMail 등 일부 서비스는 종료 전환.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-devops-agent-security-agent-ga-product-lifecycle-updates-and-more-april-6-2026/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
