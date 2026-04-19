@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-04-20 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 4월 20일 (월) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">OpenAI 역대 최대 펀딩<span class="score-badge">★ 98</span></h4>
+            <p class="summary-line">OpenAI가 1,220억 달러 규모 시리즈 D를 마감, 기업 가치 8,520억 달러 달성.</p>
+            <p class="summary-line">아마존·엔비디아·소프트뱅크 등 참여, 개인 투자자에게도 최초로 30억 달러 개방.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/03/31/openai-not-yet-public-raises-3b-from-retail-investors-in-monster-122b-fund-raise/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Meta, Muse Spark 출시<span class="score-badge">★ 94</span></h4>
+            <p class="summary-line">Meta가 Alexandr Wang 주도로 첫 독자 AI 모델 Muse Spark를 공개했다.</p>
+            <p class="summary-line">Llama 4 대비 1/10 컴퓨팅으로 동등 성능, 멀티모달·에이전트 작업 지원.</p>
+            <p class="article-meta">
+              <span class="source">Axios</span> · 
+              <a href="https://www.axios.com/2026/04/08/meta-muse-alexandr-wang" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Opus 4.7 출시<span class="score-badge">★ 98</span></h4>
+            <p class="summary-line">Anthropic이 코딩·비전·지시 이행 능력을 대폭 향상한 Opus 4.7을 출시했다.</p>
+            <p class="summary-line">이미지 처리 해상도 3배 향상(2,576px), 고정밀 컴퓨터 비전 에이전트 워크플로 지원.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Code 앱 전면 개편<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">Anthropic이 다중 병렬 세션 관리 사이드바를 중심으로 Claude Code 데스크탑 앱을 재설계했다.</p>
+            <p class="summary-line">드래그 앤 드롭 멀티 패널, 통합 터미널·파일 편집기·대용량 diff 뷰어 제공.</p>
+            <p class="article-meta">
+              <span class="source">MacRumors</span> · 
+              <a href="https://www.macrumors.com/2026/04/15/anthropic-rebuilds-claude-code-desktop-app/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Design 공개<span class="score-badge">★ 88</span></h4>
+            <p class="summary-line">Anthropic Labs가 Opus 4.7 기반 비주얼 협업 실험 제품 Claude Design을 출시했다.</p>
+            <p class="summary-line">텍스트 프롬프트·문서·웹사이트 캡처로 디자인·슬라이드·마케팅 자료를 생성한다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-design-anthropic-labs" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">TSMC Q1 순이익 58% 급증<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">TSMC가 AI 수요에 힘입어 Q1 순이익 58% 증가, 4분기 연속 역대 최고 실적을 기록했다.</p>
+            <p class="summary-line">CEO는 AI 수요를 &#39;매우 강력하다&#39;고 평가, 2026년 연간 성장률 30% 이상으로 전망 상향.</p>
+            <p class="article-meta">
+              <span class="source">CNBC</span> · 
+              <a href="https://www.cnbc.com/2026/04/16/tsmc-q1-profit-58-percent-ai-chip-demand-record.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">아마존, Globalstar 인수<span class="score-badge">★ 88</span></h4>
+            <p class="summary-line">아마존이 위성 사업자 Globalstar를 116억 달러에 인수, Starlink 대항 저궤도 위성망 구축.</p>
+            <p class="summary-line">애플과 파트너십 체결로 iPhone·Apple Watch 위성 긴급 SOS 서비스를 Amazon Leo가 담당 예정.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/04/14/amazon-to-buy-globalstar-for-11-57b-in-bid-to-flesh-out-its-satellite-biz/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js 16.2 출시<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">Next.js 16.2에서 개발 서버 시작 시간 87% 단축, HTML 렌더링 속도 25~60% 향상됐다.</p>
+            <p class="summary-line">Adapters API가 정식 안정화돼 배포 플랫폼이 빌드 프로세스를 커스터마이즈할 수 있게 됐다.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/next-16-2" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Next.js 크로스 플랫폼 전략<span class="score-badge">★ 88</span></h4>
+            <p class="summary-line">Adapter API로 Cloudflare·AWS·Netlify 등 다양한 플랫폼에 Next.js를 일관되게 배포할 수 있게 됐다.</p>
+            <p class="summary-line">OpenNext와의 협업을 공식화, Vercel 외 플랫폼에서도 ISR·App Router 전 기능 활용 가능.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/nextjs-across-platforms" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AWS Interconnect GA 출시<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">AWS Interconnect가 GA로 출시, 멀티클라우드·라스트마일 전용선 연결을 콘솔에서 턴키로 제공한다.</p>
+            <p class="summary-line">AWS·Google Cloud 간 Layer 3 사설 연결·MACsec 암호화 지원, 2026년 하반기 Azure 지원 예정.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/aws-interconnect-is-now-generally-available-with-a-new-option-to-simplify-last-mile-connectivity/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
