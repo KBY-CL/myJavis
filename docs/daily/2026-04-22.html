@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-04-22 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 4월 22일 (수) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">GPT-5.4-Cyber 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">OpenAI가 사이버 보안 특화 모델 GPT-5.4-Cyber를 발표했다.</p>
+            <p class="summary-line">바이너리 악성코드 분석·리버스 엔지니어링 기능을 지원한다.</p>
+            <p class="article-meta">
+              <span class="source">The Hacker News</span> · 
+              <a href="https://thehackernews.com/2026/04/openai-launches-gpt-54-cyber-with.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Gemini 7.5억 사용자 돌파<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Google Gemini 월간 활성 사용자가 7억 5천만 명을 돌파했다.</p>
+            <p class="summary-line">Gemini 3.1 Pro가 출시되어 코딩·데이터 분석 추론 능력이 향상됐다.</p>
+            <p class="article-meta">
+              <span class="source">Tech Insider</span> · 
+              <a href="https://tech-insider.org/google-gemini-750-million-users-march-2026-updates/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">AI 에너지 100배 절감 성공<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">뉴로-심볼릭 AI가 기존 대비 에너지를 최대 100분의 1로 줄였다.</p>
+            <p class="summary-line">정확도 95%로 기존 34% 대비 월등하며 훈련 시간도 대폭 단축됐다.</p>
+            <p class="article-meta">
+              <span class="source">ScienceDaily</span> · 
+              <a href="https://www.sciencedaily.com/releases/2026/04/260405003952.htm" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Opus 4.7 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Anthropic이 Claude Opus 4.7를 출시했다. API ID는 claude-opus-4-7.</p>
+            <p class="summary-line">비전 기능이 강화되어 최대 2,576픽셀 이미지 분석이 가능해졌다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Design 공개<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Anthropic Labs가 텍스트 대화로 디자인 프로토타입을 생성하는 Claude Design을 출시했다.</p>
+            <p class="summary-line">Canva·PDF·PPTX·HTML 내보내기와 조직 단위 협업 기능을 지원한다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-design-anthropic-labs" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Code v2.1.116 업데이트<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">4월 한 달간 30회 이상 업데이트로 /ultrareview, Auto 모드 등 신기능이 추가됐다.</p>
+            <p class="summary-line">v2.1.116에서 대규모 세션 /resume 속도 67% 향상 등 성능이 크게 개선됐다.</p>
+            <p class="article-meta">
+              <span class="source">Releasebot (Anthropic Claude Code 릴리스 기반)</span> · 
+              <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">EU 빅테크 벌금 70억달러<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">EU가 DMA 위반으로 Apple·Meta에 각각 5억·2억 유로 과징금을 부과했다.</p>
+            <p class="summary-line">트럼프 행정부는 최대 2,000억 달러 관세 보복 패키지로 즉각 반발했다.</p>
+            <p class="article-meta">
+              <span class="source">CNBC</span> · 
+              <a href="https://www.cnbc.com/2026/04/10/google-meta-big-tech-6-billion-euros-eu-fine.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js 16.2 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Next.js 16.2에서 개발 서버 시작 시간이 87% 단축됐다.</p>
+            <p class="summary-line">HTML 렌더링이 최대 60% 향상되고 ImageResponse는 20배 빨라졌다.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/next-16-2" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">TypeScript 6.0 발표<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">TypeScript 6.0은 JS 기반 마지막 버전으로 이후 Go 기반 7.0으로 이어진다.</p>
+            <p class="summary-line">strict 모드가 기본 활성화되고 ES5 타겟·AMD/UMD 모듈 지원이 종료된다.</p>
+            <p class="article-meta">
+              <span class="source">TypeScript Blog (Microsoft DevBlogs)</span> · 
+              <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AWS Interconnect GA 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">AWS Interconnect가 정식 출시되어 콘솔에서 수분 내 사설 Layer 3 연결이 가능하다.</p>
+            <p class="summary-line">현재 Google Cloud를 지원하며 2026년 내 Azure·OCI 지원이 예정돼 있다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/aws-interconnect-is-now-generally-available-with-a-new-option-to-simplify-last-mile-connectivity/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
