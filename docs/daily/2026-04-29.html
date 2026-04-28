@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-04-29 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 4월 29일 (수) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">OpenAI GPT-5.5 공개<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">OpenAI가 GPT-5.5를 출시, API는 4월 24일부터 제공됐다.</p>
+            <p class="summary-line">에이전틱 코딩·과학 연구 분야 강화, 1M 토큰 컨텍스트 지원.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">MS-OpenAI 파트너십 개편<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">MS와 OpenAI가 파트너십 조건을 개정, OpenAI는 타 클라우드도 활용 가능.</p>
+            <p class="summary-line">MS는 2032년까지 비독점 라이선스 유지, OpenAI는 2030년까지 수익 배분.</p>
+            <p class="article-meta">
+              <span class="source">Microsoft Blog</span> · 
+              <a href="https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude 크리에이티브 통합<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Adobe, Blender, Ableton 등 50개 이상 앱에 Claude 커넥터 통합 발표.</p>
+            <p class="summary-line">자연어로 3D 모델 생성·음악 제작·반복 작업 자동화 등 직접 참여 가능.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-for-creative-work" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Code /ultrareview 출시<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">/ultrareview 공개 프리뷰: 클라우드 버그 탐지 에이전트 집합이 자동 실행.</p>
+            <p class="summary-line">Session Recap 기능 추가로 비활성 기간의 터미널 상태 복원 지원.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic (Claude Code Docs)</span> · 
+              <a href="https://code.claude.com/docs/en/whats-new" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Apple·Meta DMA 위반 과징금<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">EU가 DMA 첫 위반 결정으로 Apple 5억·Meta 2억 유로 과징금을 부과했다.</p>
+            <p class="summary-line">Apple은 외부 결제 유도 미준수, Meta는 개인정보 선택권 미제공 혐의.</p>
+            <p class="article-meta">
+              <span class="source">European Commission</span> · 
+              <a href="https://digital-strategy.ec.europa.eu/en/news/commission-finds-apple-and-meta-breach-digital-markets-act" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">TSMC A13 로드맵 공개<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">TSMC가 2029년 목표 A13·A12 공정과 2028년 N2U 양산 로드맵을 발표했다.</p>
+            <p class="summary-line">A16 양산은 2027년으로 확정, High-NA EUV 없이 A12·A13 구현 가능.</p>
+            <p class="article-meta">
+              <span class="source">BusinessWire / TSMC</span> · 
+              <a href="https://www.businesswire.com/news/home/20260422346925/en/TSMC-Debuts-A13-Technology-at-2026-North-America-Technology-Symposium" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js 16 업그레이드 가이드<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Turbopack이 next dev·build 기본 번들러로 채택, 별도 플래그 불필요.</p>
+            <p class="summary-line">React 19.2 통합 및 React Compiler 1.0 stable 승격으로 신기능 지원.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Official Docs</span> · 
+              <a href="https://nextjs.org/docs/app/guides/upgrading/version-16" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">TypeScript 7.0 베타 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">컴파일러를 Go로 재작성한 TypeScript 7.0 베타 출시, 빌드 속도 10배 향상.</p>
+            <p class="summary-line">strict 기본 활성화·ES5 출력 삭제 등 Breaking Change 대폭 증가.</p>
+            <p class="article-meta">
+              <span class="source">Code Roasis</span> · 
+              <a href="https://coderoasis.com/typescript-7-0-beta-go-compiler-project-corsa-10x-faster/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AWS What&#39;s Next 주요 발표<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Amazon Quick AI가 macOS/Windows 앱으로 출시, 로컬 파일·캘린더 통합 지원.</p>
+            <p class="summary-line">Amazon Connect가 공급망·채용·고객·의료 4개 AI 솔루션으로 확장됐다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">AWS 주간 라운드업 4/27<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Meta가 AWS Graviton을 수천만 코어 규모로 도입해 AI 추론에 활용한다.</p>
+            <p class="summary-line">Lambda S3 Files 출시: Lambda 함수가 S3를 파일시스템으로 직접 마운트 가능.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-anthropic-meta-partnership-aws-lambda-s3-files-amazon-bedrock-agentcore-cli-and-more-april-27-2026/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
