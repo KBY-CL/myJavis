@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-05-01 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 5월 1일 (금) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">DeepSeek V4 프리뷰 공개<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">DeepSeek가 V4-Pro(1.6T)·V4-Flash(284B) 모델을 프리뷰 공개했다.</p>
+            <p class="summary-line">프론티어 모델 수준 추론 성능을 훨씬 낮은 비용으로 구현했다.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">OpenAI GPT-5.5 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">OpenAI가 GPT-5.5를 출시, Terminal-Bench 2.0에서 82.7%를 기록했다.</p>
+            <p class="summary-line">에이전틱 코딩·지식 작업에 강하며 응답 지연은 이전 세대 수준이다.</p>
+            <p class="article-meta">
+              <span class="source">OpenAI</span> · 
+              <a href="https://openai.com/news/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Security 퍼블릭 베타<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Anthropic이 엔터프라이즈 대상 Claude Security 공개 베타를 시작했다.</p>
+            <p class="summary-line">코드베이스 취약점 자동 스캔·패치 생성, CrowdStrike 등과 파트너십 체결.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-code-security" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Code v2.1.122 업데이트<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Bedrock 서비스 티어 선택, GitLab·Bitbucket PR URL 지원이 추가됐다.</p>
+            <p class="summary-line">MCP alwaysLoad 옵션과 Vertex AI mTLS 지원도 함께 포함됐다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic (GitHub)</span> · 
+              <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.122" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude 크리에이티브 워크플로<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Claude가 Adobe Creative Cloud 50개 앱·Blender·Ableton과 연동됐다.</p>
+            <p class="summary-line">미술 학교 파트너십 및 Claude Design으로 창작 교육 지원도 시작했다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-for-creative-work" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">빅테크 AI 투자 성과 엇갈려<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">MS·Meta·Google이 2026년 합산 AI 설비 투자 $7,250억을 발표했다.</p>
+            <p class="summary-line">Alphabet은 Cloud 63% 성장으로 급등, Meta는 ROI 우려로 6% 하락했다.</p>
+            <p class="article-meta">
+              <span class="source">Fortune</span> · 
+              <a href="https://fortune.com/2026/04/29/microsoft-meta-google-ai-capex-spending-billions/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">TSMC 3nm 웨이퍼 생산 확대<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">TSMC 3nm 월 생산 능력이 2026년 말 18만 장으로 전년 대비 40% 증가한다.</p>
+            <p class="summary-line">2nm도 동기간 약 10만 장으로 증설, GPU·HPC·차량용 수요가 견인한다.</p>
+            <p class="article-meta">
+              <span class="source">TrendForce</span> · 
+              <a href="https://www.trendforce.com/news/2026/04/27/news-tsmc-3nm-monthly-capacity-may-hit-180k-wafers-by-2026-up-over-40-yoy-on-ai-demand/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">TypeScript 7.0 베타 발표<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">TypeScript 7.0 베타가 컴파일러를 Go로 재작성해 6.x 대비 10배 빠르다.</p>
+            <p class="summary-line">병렬화 플래그 추가, 6.x 타입 검사와 완전 호환된다.</p>
+            <p class="article-meta">
+              <span class="source">TypeScript Blog (devblogs.microsoft.com)</span> · 
+              <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-beta/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AWS Q1 2026 실적 발표<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">AWS가 Q1 2026에 매출 $376억(+28% YoY)·영업이익 $142억을 기록했다.</p>
+            <p class="summary-line">OpenAI·Anthropic의 Trainium 대용량 계약과 Bedrock 토큰 처리 신기록 달성.</p>
+            <p class="article-meta">
+              <span class="source">About Amazon</span> · 
+              <a href="https://www.aboutamazon.com/news/company-news/amazon-earnings-q1-2026-report" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">AWS 2026 주요 발표 정리<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Amazon Quick AI 업무 도우미 출시, Connect가 4개 에이전틱 AI 라인으로 확장됐다.</p>
+            <p class="summary-line">GPT-5.5·Codex를 Amazon Bedrock에서 제한 프리뷰로 사용 가능해졌다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
