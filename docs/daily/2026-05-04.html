@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-05-04 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 5월 4일 (월) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">ChatGPT 워크스페이스 에이전트<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">OpenAI가 ChatGPT에 Codex 기반 자율 업무 에이전트 기능을 도입했다.</p>
+            <p class="summary-line">팀 단위 에이전트 공유 및 Slack 연동, 조직 권한 범위 내 동작.</p>
+            <p class="article-meta">
+              <span class="source">OpenAI</span> · 
+              <a href="https://openai.com/index/introducing-workspace-agents-in-chatgpt/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">OpenAI GPT-5.5 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">OpenAI가 GPT-5.5를 출시, Terminal-Bench 2.0에서 82.7%를 달성했다.</p>
+            <p class="summary-line">Pro 버전은 GPT-5.4 수준 레이턴시를 유지하면서 높은 지능을 제공한다.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Meta Muse Spark 공개<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Meta가 MSL 첫 모델 Muse Spark를 공개, 멀티모달 추론과 멀티에이전트 지원.</p>
+            <p class="summary-line">전 Scale AI CEO Alexandr Wang 주도 개발, 주요 모델과 경쟁 수준 달성.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Opus 4.7 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Anthropic이 Claude Opus 4.7을 공개, 소프트웨어 엔지니어링 벤치마크 향상.</p>
+            <p class="summary-line">최대 3.75MP 고해상도 이미지 지원, 이전 대비 3배 이상 처리 가능.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Design 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Anthropic Labs가 Claude Design을 출시, 시각 결과물 생성을 지원한다.</p>
+            <p class="summary-line">브랜드 가이드라인 자동 적용, Canva·PDF·PPTX·HTML 내보내기 지원.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-design-anthropic-labs" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Apple CEO 팀 쿡 교체<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">팀 쿡이 2026년 9월 Executive Chairman으로 전환, 존 터누스가 CEO 취임.</p>
+            <p class="summary-line">터누스는 아이폰·아이패드 개발 총괄 인물로 이사회 만장일치 승인을 받았다.</p>
+            <p class="article-meta">
+              <span class="source">Apple Newsroom</span> · 
+              <a href="https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Apple Q2 실적 발표<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">애플 FY2026 Q2 매출 1,112억 달러, 전년 대비 17% 성장해 예상치를 상회했다.</p>
+            <p class="summary-line">아이폰 매출 22% 성장, 서비스 매출 309.8억 달러로 사상 최고치를 기록했다.</p>
+            <p class="article-meta">
+              <span class="source">Apple Newsroom</span> · 
+              <a href="https://www.apple.com/newsroom/2026/04/apple-reports-second-quarter-results/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Vite 8.0 정식 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Vite 8.0이 Rust 기반 Rolldown 번들러를 채택, 빌드 속도 최대 30배 향상.</p>
+            <p class="summary-line">Vite Devtools 내장, 브라우저 콘솔 로그를 서버 터미널로 포워딩하는 옵션 추가.</p>
+            <p class="article-meta">
+              <span class="source">Vite Official Blog</span> · 
+              <a href="https://vite.dev/blog/announcing-vite8" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Lambda S3 파일시스템 마운트<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Lambda 함수에서 S3 버킷을 파일 시스템으로 직접 마운트할 수 있게 됐다.</p>
+            <p class="summary-line">NFS v4.1+ 기반으로 데이터 다운로드 없이 직접 처리하며 EFS 인프라를 활용.</p>
+            <p class="article-meta">
+              <span class="source">AWS What&#39;s New</span> · 
+              <a href="https://aws.amazon.com/about-aws/whats-new/2026/04/aws-lambda-amazon-s3/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">AWS Interconnect GA 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">AWS Interconnect가 GA, Amazon VPC와 Google Cloud 간 관리형 프라이빗 연결 제공.</p>
+            <p class="summary-line">last-mile 신규 옵션으로 콘솔에서 1~100 Gbps 고속 연결을 간편하게 구성 가능.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/aws-interconnect-is-now-generally-available-with-a-new-option-to-simplify-last-mile-connectivity/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
