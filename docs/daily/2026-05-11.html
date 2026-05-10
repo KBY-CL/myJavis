@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-05-11 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 5월 11일 (월) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">GPT-5.5 Instant 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">OpenAI가 GPT-5.5 Instant를 ChatGPT 기본 모델로 배포했다.</p>
+            <p class="summary-line">수학(AIME 81.2점)·멀티모달(MMMU-Pro 76점) 벤치마크에서 전작 대비 크게 향상됐다.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">DeepSeek V4 프리뷰 공개<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">DeepSeek이 V4-Pro·V4-Flash 두 버전을 오픈소스로 공개했다.</p>
+            <p class="summary-line">최대 100만 토큰 컨텍스트, 화웨이 Ascend 칩 최적화 추론을 지원한다.</p>
+            <p class="article-meta">
+              <span class="source">CNBC</span> · 
+              <a href="https://www.cnbc.com/2026/04/24/deepseek-v4-llm-preview-open-source-ai-competition-china.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude, SpaceX와 컴퓨팅 제휴<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Anthropic이 SpaceX Colossus 1 데이터센터 300MW 이상 GPU 용량을 확보했다.</p>
+            <p class="summary-line">Claude Code의 5시간 사용량 한도가 전 유료 플랜에서 두 배로 늘었다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/higher-limits-spacex" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Opus 4.7 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">코딩 성능이 Opus 4.6 대비 13% 향상, 프로덕션 작업 해결 건수 3배 증가했다.</p>
+            <p class="summary-line">이미지 해상도 지원이 3배 향상됐고 금융·법률 벤치마크에서 업계 최고를 기록했다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">애플-인텔 칩 생산 합의<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">애플과 인텔이 14A 공정 기반 칩 협력에 예비 합의, 2028년부터 제조 시작 예정이다.</p>
+            <p class="summary-line">TSMC 의존도 완화 기대에 인텔 주가가 14% 급등했다.</p>
+            <p class="article-meta">
+              <span class="source">CNBC</span> · 
+              <a href="https://www.cnbc.com/2026/05/08/intel-stock-apple-chip-deal.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">애플, TSMC 2nm 독점<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">애플이 TSMC 2nm 생산량 50% 이상을 A20·M5 칩으로 선점해 경쟁사가 3nm로 밀렸다.</p>
+            <p class="summary-line">HBM 메모리는 2026년까지 완판, 현물 가격은 전년 말 대비 80~90% 폭등했다.</p>
+            <p class="article-meta">
+              <span class="source">247 Wall St.</span> · 
+              <a href="https://247wallst.com/investing/2026/05/09/apple-dominated-the-2026-chip-war-googles-partners-are-left-to-buy-scraps/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">구글 독점 DOJ 분리 추진<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">DOJ가 구글 검색 독점 소송에서 Chrome·Android 분리 등 구조적 시정 조치를 요구하고 있다.</p>
+            <p class="summary-line">강제 선택 화면만으로도 구글 광고 수익이 연 150~250억 달러 감소할 것으로 추정된다.</p>
+            <p class="article-meta">
+              <span class="source">Tech Insider</span> · 
+              <a href="https://tech-insider.org/google-antitrust-appeal-doj-search-monopoly-2026/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js 보안 패치 긴급 배포<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Next.js 15.5.18·16.2.6에서 미들웨어 우회·XSS·SSRF 등 11개 취약점이 패치됐다.</p>
+            <p class="summary-line">React 19의 Server Components DoS 취약점(CVE-2026-23870)도 함께 수정됐다.</p>
+            <p class="article-meta">
+              <span class="source">Netlify Changelog</span> · 
+              <a href="https://www.netlify.com/changelog/2026-05-08-react-nextjs-security-vulnerabilities/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AWS MCP Server GA 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">AWS MCP Server가 정식 출시돼 AI 에이전트가 IAM으로 AWS 전체 API 15,000개 이상에 접근 가능해졌다.</p>
+            <p class="summary-line">run_script 도구로 Python 스크립트를 서버사이드 샌드박스에서 안전하게 실행할 수 있다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/the-aws-mcp-server-is-now-generally-available/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Amazon Q Developer 종료 예고<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">2026년 5월 15일부터 Q Developer 신규 가입이 차단되고 2027년 4월 완전 종료된다.</p>
+            <p class="summary-line">Anthropic 기반 후속 서비스 Kiro(kiro.dev)로 마이그레이션이 권고된다.</p>
+            <p class="article-meta">
+              <span class="source">AWS DevOps &amp; Developer Productivity Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/devops/amazon-q-developer-end-of-support-announcement/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
