@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-05-13 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 5월 13일 (수) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 11건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">GPT-5.5 Instant 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">OpenAI가 GPT-5.5 Instant를 ChatGPT 기본 모델로 교체했다.</p>
+            <p class="summary-line">AIME 수학 81.2점, MMMU-Pro 멀티모달 추론 76점 달성.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">xAI, Grok 4.3 공개<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">xAI가 100만 토큰 컨텍스트·비디오 입력 지원 Grok 4.3을 API에 공개했다.</p>
+            <p class="summary-line">Intelligence Index 53점으로 법률·기업금융 평가 1위를 기록했다.</p>
+            <p class="article-meta">
+              <span class="source">Medium / NLPlanet</span> · 
+              <a href="https://medium.com/nlplanet/xai-releases-grok-4-3-weekly-ai-newsletter-may-4th-2026-4b7e8fea0f10" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude 법률 특화 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Anthropic이 12개 법률 실무 플러그인과 20개 이상 MCP 커넥터를 공개했다.</p>
+            <p class="summary-line">Thomson Reuters, Harvey, Everlaw 등 주요 리걸테크 플랫폼과 통합됐다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://claude.com/blog/claude-for-the-legal-industry" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Thomson Reuters·Claude 연동<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Thomson Reuters가 Claude Agent SDK 기반 MCP로 CoCounsel Legal을 재구축했다.</p>
+            <p class="summary-line">Westlaw 19억 건 문서와 연결돼 인용 근거가 포함된 법률 결과물을 생성한다.</p>
+            <p class="article-meta">
+              <span class="source">PR Newswire</span> · 
+              <a href="https://www.prnewswire.com/news-releases/thomson-reuters-and-anthropic-expand-partnership-to-connect-claude-with-cocounsel-legal-302769890.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">SAP·Claude 플랫폼 통합<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">SAP Sapphire에서 Claude가 SAP Business AI Platform의 핵심 추론 엔진으로 채택됐다.</p>
+            <p class="summary-line">MCP로 S/4HANA·SuccessFactors·Ariba를 연결해 복잡한 기업 업무를 자동화한다.</p>
+            <p class="article-meta">
+              <span class="source">SAP News Center</span> · 
+              <a href="https://news.sap.com/2026/05/sap-anthropic-to-bring-claude-sap-business-ai-platform/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Canvas 해킹 몸값 지불<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Instructure가 ShinyHunters에 랜섬을 지불해 탈취 데이터 파기를 확인받았다.</p>
+            <p class="summary-line">8,800개 기관·2억 7,500만 명 데이터 유출로 교육 분야 역대 최대 침해 규모다.</p>
+            <p class="article-meta">
+              <span class="source">Inside Higher Ed</span> · 
+              <a href="https://www.insidehighered.com/news/tech-innovation/administrative-tech/2026/05/11/instructure-pays-ransom-canvas-hackers" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">MS 5월 패치 120건 수정<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Microsoft가 5월 패치 화요일에 120개 취약점을 수정했으며 17개가 Critical 등급이다.</p>
+            <p class="summary-line">Windows Netlogon CVSS 9.8 포함 RCE 취약점 14건이 Critical에 해당한다.</p>
+            <p class="article-meta">
+              <span class="source">BleepingComputer</span> · 
+              <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-may-2026-patch-tuesday-fixes-120-flaws-no-zero-days/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Temporal API Stage 4 확정<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">TC39가 Temporal API를 Stage 4로 승격시켜 ECMAScript 2026 명세에 포함했다.</p>
+            <p class="summary-line">9년 개발 끝에 JS Date 대체재로 불변 타입과 타임존 내장 지원을 제공한다.</p>
+            <p class="article-meta">
+              <span class="source">Socket.dev</span> · 
+              <a href="https://socket.dev/blog/tc39-advances-temporal-to-stage-4" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Svelte 5월 업데이트<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">SvelteKit 2.56.0에서 TypeScript 6.0 지원이 추가됐다.</p>
+            <p class="summary-line">sv CLI에 커뮤니티 애드온 기능이 실험적으로 출시됐다.</p>
+            <p class="article-meta">
+              <span class="source">Svelte Blog</span> · 
+              <a href="https://svelte.dev/blog/whats-new-in-svelte-may-2026" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Redshift Graviton RG 인스턴스<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Graviton 기반 RG 인스턴스가 RA3 대비 Iceberg 쿼리 2.4배, DW 2.2배 빠르다.</p>
+            <p class="summary-line">vCPU당 비용 30% 절감, Redshift Spectrum 스캔 비용($5/TB)도 없어졌다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/amazon-redshift-introduces-aws-graviton-based-rg-instances-with-an-integrated-data-lake-query-engine/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Bedrock AgentCore 결제 지원<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Amazon Bedrock AgentCore가 Coinbase·Stripe 연동으로 에이전트 자율 결제를 지원한다.</p>
+            <p class="summary-line">EC2 M8idn/R8idn 인스턴스 출시로 vCPU당 컴퓨팅 성능이 최대 43% 향상됐다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-bedrock-agentcore-payments-agent-toolkit-for-aws-and-more-may-11-2026/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
