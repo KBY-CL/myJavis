@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-05-18 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 5월 18일 (월) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">ChatGPT 개인금융 도구 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">OpenAI가 ChatGPT Pro 구독자 대상 개인 금융 도구를 미국에서 프리뷰 출시했다.</p>
+            <p class="summary-line">Plaid 연동으로 12,000개 금융기관 계좌 연결 및 포트폴리오 대시보드 제공.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Google I/O 2026 AI 주요 발표<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Google이 Android용 Gemini Intelligence를 공개, 앱 간 이동과 멀티태스킹 자동화 지원.</p>
+            <p class="summary-line">Google Home에 Gemini 3.1 탑재, 차량용 Google 빌트인에도 Gemini 적용 시작.</p>
+            <p class="article-meta">
+              <span class="source">Android Central</span> · 
+              <a href="https://www.androidcentral.com/phones/live/google-i-o-2026-live-blog-android-17-android-xr-glasses-and-all-the-gemini-ai-news" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">PwC, Claude 전사 배포 확대<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">PwC가 Claude Code와 Claude Cowork를 미국 팀 전체에 배포하고 글로벌 인력으로 확대 예정.</p>
+            <p class="summary-line">30,000명 전문가 Claude 교육·인증, 보험 인수심사 기간을 10주에서 10일로 단축 성과.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/pwc-expanded-partnership" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Code v2.1.143 릴리스<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Fast Mode 기본 모델이 Opus 4.7로 변경되고 agents 명령에 다수 플래그가 추가됐다.</p>
+            <p class="summary-line">플러그인 마켓플레이스에 컨텍스트 비용 표시 기능과 worktree 배경 세션 직접 편집 지원.</p>
+            <p class="article-meta">
+              <span class="source">Releasebot (Claude Code changelog)</span> · 
+              <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Apple·Intel 칩 제조 예비협약<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Apple과 Intel이 Intel 18A 공정으로 Apple 기기용 칩을 생산하는 예비 협약을 체결했다.</p>
+            <p class="summary-line">소식 발표 후 Intel 주가 15% 급등, Apple의 TSMC 의존도 분산 전략의 일환.</p>
+            <p class="article-meta">
+              <span class="source">CNBC</span> · 
+              <a href="https://www.cnbc.com/2026/05/08/intel-stock-apple-chip-deal.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">TSMC 애리조나 200억불 추가 투자<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">TSMC가 애리조나 Fab 21 확장에 200억 달러를 추가 배정, 총 누적 투자 1,650억 달러.</p>
+            <p class="summary-line">Apple은 2026년 TSMC 애리조나 생산 A19 칩 1억 개 이상 구매 계획.</p>
+            <p class="article-meta">
+              <span class="source">MacTech</span> · 
+              <a href="https://www.mactech.com/2026/05/15/apples-manufacturing-partner-tsmc-has-allocated-an-additional-20-billion-to-expand-its-phoenix-arizona-facility/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js·React 보안 패치 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Next.js 15.5.18/16.2.6, React 19 시리즈 보안 패치가 출시, 13개 CVE 수정.</p>
+            <p class="summary-line">DoS, 미들웨어 우회, XSS, SSRF, 캐시 포이즈닝 등 다양한 취약점 포함.</p>
+            <p class="article-meta">
+              <span class="source">Netlify Changelog</span> · 
+              <a href="https://www.netlify.com/changelog/2026-05-08-react-nextjs-security-vulnerabilities/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Vite 8.0 정식 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Vite 8이 Rust 기반 Rolldown을 단일 번들러로 채택, 개발·프로덕션 이중 구조를 통합했다.</p>
+            <p class="summary-line">빌드 속도 최대 10~30배 향상, Linear 46초에서 6초로 단축 등 실사례 확인.</p>
+            <p class="article-meta">
+              <span class="source">Vite Official Blog</span> · 
+              <a href="https://vite.dev/blog/announcing-vite8" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Redshift Graviton RG 인스턴스 GA<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">AWS Graviton 기반 Redshift RG 인스턴스 GA, RA3 대비 2.2배 빠르고 비용 30% 절감.</p>
+            <p class="summary-line">Iceberg 데이터 레이크 쿼리를 직접 처리해 Spectrum TB당 $5 요금을 완전 제거.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/amazon-redshift-introduces-aws-graviton-based-rg-instances-with-an-integrated-data-lake-query-engine/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Bedrock 프롬프트 최적화 도구 GA<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Amazon Bedrock Advanced Prompt Optimization GA, 최대 5개 모델 동시 비교 및 자동 최적화.</p>
+            <p class="summary-line">기존 모델을 베이스라인으로 최대 4개 후보 모델과 비교해 마이그레이션 타당성 사전 검증 가능.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/amazon-bedrock-introduces-new-advanced-prompt-optimization-and-migration-tool/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
