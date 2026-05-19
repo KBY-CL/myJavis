@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-05-20 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 5월 20일 (수) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Google, 개인 AI 에이전트 공개<span class="score-badge">★ 100</span></h4>
+            <p class="summary-line">Google I/O 2026에서 24/7 개인 AI 에이전트 Gemini Spark를 발표했다.</p>
+            <p class="summary-line">Gemini 3.5 Flash는 기존 대비 4배 빠른 속도로 최강 에이전트·코딩 모델을 목표로 한다.</p>
+            <p class="article-meta">
+              <span class="source">CNBC</span> · 
+              <a href="https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">GPT-5.5 Instant 출시<span class="score-badge">★ 90</span></h4>
+            <p class="summary-line">OpenAI가 ChatGPT 기본 모델을 GPT-5.5 Instant로 교체하고 환각 감소를 강조했다.</p>
+            <p class="summary-line">AIME 2025 수학 벤치마크 81.2점, MMMU-Pro 76점으로 전작 대비 성능이 향상됐다.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Anthropic, Stainless 인수<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">Anthropic이 SDK 및 MCP 서버 생성 전문 기업 Stainless를 인수했다.</p>
+            <p class="summary-line">Stainless는 TypeScript, Python, Go, Java 등 공식 Anthropic SDK를 제공해온 회사다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/anthropic-acquires-stainless" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">KPMG, Claude 전사 도입<span class="score-badge">★ 88</span></h4>
+            <p class="summary-line">KPMG가 138개국 276,000명 직원에게 Claude를 제공하는 전략적 파트너십을 체결했다.</p>
+            <p class="summary-line">Claude Code와 Managed Agents가 KPMG 핵심 플랫폼 Digital Gateway에 통합된다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/anthropic-kpmg" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">소상공인용 Claude 출시<span class="score-badge">★ 90</span></h4>
+            <p class="summary-line">Anthropic이 소상공인을 위해 15개 즉시 실행 자동화 워크플로우를 제공하는 플랜을 출시했다.</p>
+            <p class="summary-line">QuickBooks, PayPal, HubSpot, Canva 등 주요 비즈니스 툴과 통합을 지원한다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-for-small-business" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Apple-Intel 칩 제조 계약<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">Apple과 Intel이 Apple Silicon 일부 프로세서를 Intel 파운드리에서 생산하는 계약을 맺었다.</p>
+            <p class="summary-line">보도 직후 Intel 주가가 약 19% 급등하며 역대 최고가 $126.23을 기록했다.</p>
+            <p class="article-meta">
+              <span class="source">Tom&#39;s Hardware</span> · 
+              <a href="https://www.tomshardware.com/tech-industry/semiconductors/apple-reportedly-strikes-deal-for-intel-to-make-some-of-its-chips-two-tech-giants-reached-a-preliminary-agreement-for-intel-to-make-processors-for-cupertino" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">DOJ, Google 독점 판결<span class="score-badge">★ 88</span></h4>
+            <p class="summary-line">미 연방법원이 Google의 검색 독점에 대해 배타적 유통 계약 금지 등 행동적 구제를 명령했다.</p>
+            <p class="summary-line">기업 분할은 선택되지 않았으나 검색 인덱스와 사용자 데이터를 경쟁사에 공유하도록 의무화됐다.</p>
+            <p class="article-meta">
+              <span class="source">U.S. Department of Justice</span> · 
+              <a href="https://www.justice.gov/opa/pr/department-justice-wins-significant-remedies-against-google" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js·React 보안 패치<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">2026년 5월 총 12건의 보안 취약점이 패치됐으며 11개 Next.js CVE가 공개됐다.</p>
+            <p class="summary-line">미들웨어 우회, XSS, SSRF, 캐시 포이즈닝, DoS 등 5가지 위협 유형이 포함된다.</p>
+            <p class="article-meta">
+              <span class="source">Netlify Changelog</span> · 
+              <a href="https://www.netlify.com/changelog/2026-05-08-react-nextjs-security-vulnerabilities/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Vite 8.0 정식 출시<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">Rust 기반 번들러 Rolldown을 탑재해 프로덕션 빌드 속도가 최대 10~30배 향상됐다.</p>
+            <p class="summary-line">Linear는 빌드 시간을 46초에서 6초로, Beehiiv는 64%, Ramp는 57% 단축했다.</p>
+            <p class="article-meta">
+              <span class="source">Vite Official Blog</span> · 
+              <a href="https://vite.dev/blog/announcing-vite8" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Redshift Graviton RG 인스턴스<span class="score-badge">★ 90</span></h4>
+            <p class="summary-line">Amazon Redshift가 Graviton 기반 RG 인스턴스를 출시해 RA3 대비 최대 2.4배 성능을 제공한다.</p>
+            <p class="summary-line">vCPU당 가격이 RA3 대비 30% 저렴하고 Spectrum의 TB당 $5 스캔 비용도 폐지됐다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/amazon-redshift-introduces-aws-graviton-based-rg-instances-with-an-integrated-data-lake-query-engine/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
