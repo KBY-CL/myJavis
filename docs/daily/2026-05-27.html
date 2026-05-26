@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-05-27 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 5월 27일 (수) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Google I/O 2026 총정리<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Gemini 3.5 Flash 출시, 코딩·멀티모달 벤치마크에서 이전 세대 대비 우수.</p>
+            <p class="summary-line">Gemini Omni 공개, 이미지·오디오·비디오 입력으로 편집 가능한 영상 생성.</p>
+            <p class="article-meta">
+              <span class="source">9to5Google</span> · 
+              <a href="https://9to5google.com/2026/05/19/google-io-2026-news/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">GPT-5.5 Instant 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">OpenAI가 ChatGPT 기본 모델을 GPT-5.5 Instant로 교체, 환각률 52.5% 감소.</p>
+            <p class="summary-line">실시간 음성 모델(추론·번역·전사 지원)도 API로 신규 공개.</p>
+            <p class="article-meta">
+              <span class="source">OpenAI</span> · 
+              <a href="https://openai.com/index/gpt-5-5-instant/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Project Glasswing 발표<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Anthropic이 AI 악용 전 소프트웨어 취약점을 선제 탐지하는 이니셔티브 공개.</p>
+            <p class="summary-line">한 달 만에 고위험 취약점 1만 건 이상 발견, Cloudflare·Mozilla 등 50개 기관 참여.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/research/glasswing-initial-update" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Anthropic, Stainless 인수<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Anthropic이 SDK·MCP 서버 툴링 전문 기업 Stainless를 인수했다.</p>
+            <p class="summary-line">Stainless는 TypeScript·Python 등 다국어 SDK와 MCP 서버 생성 도구를 개발해온 회사.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/anthropic-acquires-stainless" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">TSMC 경쟁 시대 개막<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">AMD·Tesla·Google·Nvidia 등이 TSMC 의존도를 낮추고 삼성·인텔로 주문 분산.</p>
+            <p class="summary-line">삼성은 HBM·파운드리 패키지 할인으로 수주 경쟁 가담, 수율 안정이 과제.</p>
+            <p class="article-meta">
+              <span class="source">Digitimes</span> · 
+              <a href="https://www.digitimes.com/news/a20260525VL203/digitimes-asia-weekly-news-roundup-manufacturing-samsung-tsmc-2026.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Meta 8,000명 감원<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Meta가 전체 직원의 10%인 8,000명을 해고하고 6,000개 채용 공고를 취소했다.</p>
+            <p class="summary-line">저커버그는 AI 시대 성공이 보장되지 않는다며 구조조정 불가피성을 강조.</p>
+            <p class="article-meta">
+              <span class="source">CNBC</span> · 
+              <a href="https://www.cnbc.com/2026/05/20/meta-layoffs-zuckerberg-says-success-isnt-a-given-in-memo.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js 보안 업데이트<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Next.js 2026년 5월 보안 패치, 미들웨어 우회·DoS·SSRF 등 13개 취약점 수정.</p>
+            <p class="summary-line">React Server Components 취약점 포함, react-server-dom 19.x 업그레이드 필요.</p>
+            <p class="article-meta">
+              <span class="source">Vercel Changelog</span> · 
+              <a href="https://vercel.com/changelog/next-js-may-2026-security-release" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">ES2026 표준 확정<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Temporal API, using 키워드, RegExp.escape, Promise.try 등 다수 신기능 표준 채택.</p>
+            <p class="summary-line">Set 편의 메서드와 Math.sumPrecise, Iterator.concat 추가로 코드 간소화 기대.</p>
+            <p class="article-meta">
+              <span class="source">The New Stack</span> · 
+              <a href="https://thenewstack.io/es2026-solves-javascript-headaches-with-dates-math-and-modules/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">EC2 M3 Ultra Mac GA<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Apple M3 Ultra 기반 EC2 인스턴스 GA, 256GB 메모리로 M4 Max 대비 2배 성능.</p>
+            <p class="summary-line">Redshift RG 인스턴스 출시, RA3 대비 최대 2.4배 성능·30% 저렴한 가격 제공.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-transform-at-1-year-claude-platform-on-aws-ec2-m3-ultra-mac-instances-and-more-may-18-2026/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">AWS 이스탄불 Local Zone<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">AWS가 터키 이스탄불에 Local Zone 개설, 한 자리 밀리초 지연으로 규정 준수 지원.</p>
+            <p class="summary-line">DynamoDB 호환 어댑터 ExtendDB를 오픈소스로 공개, 로컬 개발 환경에 활용 가능.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-local-zones-in-istanbul-open-source-extenddb-kiro-web-and-more-may-25-2026/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
