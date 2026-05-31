@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-06-01 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 6월 1일 (월) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Google I/O 2026 총정리<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">Gemini 3.5 Flash가 코딩·에이전트 벤치마크에서 기존 Pro 모델을 능가했다.</p>
+            <p class="summary-line">AI Mode 월간 사용자 10억 명 돌파, 검색 에이전트는 여름 출시 예정.</p>
+            <p class="article-meta">
+              <span class="source">Google Blog</span> · 
+              <a href="https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">GPT-5.4 출시<span class="score-badge">★ 90</span></h4>
+            <p class="summary-line">추론·코딩·에이전트를 통합한 프론티어 모델, 최대 100만 토큰 컨텍스트 지원.</p>
+            <p class="summary-line">전문 업무 벤치마크 83% 달성, ChatGPT 구독자 대상 제공 시작.</p>
+            <p class="article-meta">
+              <span class="source">OpenAI</span> · 
+              <a href="https://openai.com/index/introducing-gpt-5-4/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Opus 4.8 출시<span class="score-badge">★ 98</span></h4>
+            <p class="summary-line">코딩·에이전트 성능 향상, 코드 오류 미보고율 4배 감소로 정직성 개선.</p>
+            <p class="summary-line">병렬 서브에이전트 오케스트레이션 및 Effort Control 기능 신규 추가.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Anthropic 650억 달러 조달<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">Series H로 기업가치 9,650억 달러, Amazon·Samsung·SK hynix 등 참여.</p>
+            <p class="summary-line">연환산 매출 470억 달러 초과, 컴퓨팅 확장 및 안전 연구에 투자 예정.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/series-h" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Nvidia·MS N1X PC 공개<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">ARM 기반 N1X SoC, 20코어 CPU와 RTX 5070급 Blackwell GPU를 단일 칩에 통합.</p>
+            <p class="summary-line">연말 상용화 예정, Computex 2026에서 Surface·Dell·Lenovo OEM 제품 공개.</p>
+            <p class="article-meta">
+              <span class="source">Trak.in / Windows Central</span> · 
+              <a href="https://trak.in/stories/nvidia-microsoft-launching-new-era-of-pc-on-june-1-n1x-processor-for-windows-expected/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Defender 취약점 실공격<span class="score-badge">★ 87</span></h4>
+            <p class="summary-line">CVE-2026-41091(권한 상승)·CVE-2026-45498(서비스 거부) 실제 악용 확인.</p>
+            <p class="summary-line">CISA KEV 등재, 미 연방기관은 6월 3일까지 패치 적용 의무화.</p>
+            <p class="article-meta">
+              <span class="source">Help Net Security</span> · 
+              <a href="https://www.helpnetsecurity.com/2026/05/21/microsoft-defender-vulnerabilities-cve-2026-41091-cve-2026-45498/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js 16.2 출시<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">dev 시작 시간 87% 단축, RSC 페이로드 최적화로 렌더링 25~60% 향상.</p>
+            <p class="summary-line">Turbopack 버그 200건 수정, Adapters API 안정화 및 에러 오버레이 개선.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/next-16-2" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">TypeScript 6.0 출시<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">JS 기반 컴파일러 마지막 버전, TypeScript 7.0(Go 컴파일러)으로의 전환점.</p>
+            <p class="summary-line">strict 기본 활성화, module/target 기본값을 esnext/ES2025로 현대화.</p>
+            <p class="article-meta">
+              <span class="source">TypeScript Blog (Microsoft)</span> · 
+              <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Vite 8.0 출시<span class="score-badge">★ 90</span></h4>
+            <p class="summary-line">Rolldown(Rust) 통합으로 프로덕션 빌드 속도 최대 10~30배 향상.</p>
+            <p class="summary-line">plugin-react v6에서 Babel→Oxc 교체, Vite Devtools 기본 내장.</p>
+            <p class="article-meta">
+              <span class="source">Vite Official Blog</span> · 
+              <a href="https://vite.dev/blog/announcing-vite8" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AWS us-east-1 장애<span class="score-badge">★ 90</span></h4>
+            <p class="summary-line">냉각 시스템 장애로 EC2·EBS 전원 차단, ElastiCache·SageMaker 등 연쇄 중단.</p>
+            <p class="summary-line">Coinbase 5시간 이상 거래 중단 등 대형 고객 피해, AWS 트래픽 우회 복구.</p>
+            <p class="article-meta">
+              <span class="source">AWS Health Dashboard</span> · 
+              <a href="https://health.aws.amazon.com/health/status?eventID=arn%3Aaws%3Ahealth%3Aus-east-1%3A%3Aevent%2FMULTIPLE_SERVICES%2FAWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE%2FAWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_BA540_514A652BE1A" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
