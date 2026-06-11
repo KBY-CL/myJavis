@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-06-12 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 6월 12일 (금) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">OpenAI, IPO 신청<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">OpenAI가 미 SEC에 S-1 초안을 제출하며 상장 절차를 시작했다.</p>
+            <p class="summary-line">기업가치 최대 1조 달러, 월 매출 20억 달러 규모의 공익법인으로 전환 후 추진.</p>
+            <p class="article-meta">
+              <span class="source">Al Jazeera</span> · 
+              <a href="https://www.aljazeera.com/economy/2026/6/8/tech-giant-openai-files-for-us-initial-public-offering" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Google Gemini 앱 업데이트<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">Google이 Gemini 3.5 Flash를 출시해 기업 사용자에게 기본 제공한다.</p>
+            <p class="summary-line">월 $100 AI Ultra 플랜 출시, 20TB 스토리지·YouTube Premium 번들 포함.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude-at-io-2026/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Fable 5 출시<span class="score-badge">★ 99</span></h4>
+            <p class="summary-line">Anthropic이 Fable 5·Mythos 5를 공개, 소프트웨어·비전·과학 분야 최고 성능 달성.</p>
+            <p class="summary-line">API 가격 입력 $10/M·출력 $50/M, 고위험 도메인은 Opus 4.8으로 자동 전환.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Anthropic 시리즈H 투자<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">Anthropic이 Sequoia 등으로부터 650억 달러 Series H를 유치, 기업가치 9650억 달러.</p>
+            <p class="summary-line">OpenAI를 제치고 AI 스타트업 최고 기업가치 달성, Micron·Samsung 등 전략 참여.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/series-h" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Code v2.1.172<span class="score-badge">★ 88</span></h4>
+            <p class="summary-line">서브 에이전트 최대 5단계 중첩 지원, Bedrock 리전 자동 감지 기능 추가.</p>
+            <p class="summary-line">플러그인 검색창 신설, 1M 컨텍스트 사용 시 세션 고착 버그 수정.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic (GitHub)</span> · 
+              <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.172" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">삼성 파운드리 반등<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">삼성 파운드리가 2nm GAA 수율 60% 돌파, Nvidia·Tesla·Apple 칩 수주로 가동률 최대.</p>
+            <p class="summary-line">TSMC의 73% 시장 점유율이 공급 부족으로 흔들리며 삼성·인텔 대안 부상.</p>
+            <p class="article-meta">
+              <span class="source">Republic World</span> · 
+              <a href="https://www.republicworld.com/tech/tsmcs-packed-nvidias-knocking-and-samsung-foundry-smells-a-comeback-2026-06-11-127785" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">TSMC 부족, 인텔 기회<span class="score-badge">★ 88</span></h4>
+            <p class="summary-line">TSMC AI 생산 부족으로 Google·Nvidia가 인텔을 차세대 칩 파운드리로 검토 중.</p>
+            <p class="summary-line">글로벌 반도체 공급망 재편, 인텔의 첨단 칩 제조 재진입 기회로 평가.</p>
+            <p class="article-meta">
+              <span class="source">DIGITIMES Asia</span> · 
+              <a href="https://www.digitimes.com/news/a20260609VL213/tsmc-capacity-intel-nvidia-google.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Svelte 6월 업데이트<span class="score-badge">★ 90</span></h4>
+            <p class="summary-line">query.live() API로 실시간 원격 쿼리 구독 지원, TypeScript 6.0 호환 추가.</p>
+            <p class="summary-line">remote function 관련 breaking change 포함, requested() 변경 및 .run() 제거.</p>
+            <p class="article-meta">
+              <span class="source">Svelte Blog</span> · 
+              <a href="https://svelte.dev/blog/whats-new-in-svelte-june-2026" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">5월 웹 플랫폼 신기능<span class="score-badge">★ 87</span></h4>
+            <p class="summary-line">Chrome 148에서 video·audio 네이티브 lazy loading, :open 가상 클래스 Baseline 등록.</p>
+            <p class="summary-line">Firefox 151 데스크톱에 Document Picture-in-Picture API 추가, 컨테이너 쿼리 확대.</p>
+            <p class="article-meta">
+              <span class="source">web.dev</span> · 
+              <a href="https://web.dev/blog/web-platform-05-2026" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">EC2 M9g Graviton5 출시<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">AWS가 Graviton5 기반 M9g·M9gd 인스턴스 출시, Graviton4 대비 성능 최대 35% 향상.</p>
+            <p class="summary-line">Nitro Isolation Engine으로 수학적 보안 검증 제공, 미국·유럽 3개 리전 출시.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/now-available-amazon-ec2-m9g-and-m9gd-instances-powered-by-new-aws-graviton5-processors/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
