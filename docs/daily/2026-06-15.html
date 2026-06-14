@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-06-15 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 6월 15일 (월) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Apple Siri, Gemini로 전면 교체<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">Tim Cook 마지막 키노트에서 Siri가 구글 Gemini 1.2조 파라미터 모델로 재구축됐다.</p>
+            <p class="summary-line">연 10억 달러 라이선스 계약 체결, iOS 27 베타1도 당일 공개됐다.</p>
+            <p class="article-meta">
+              <span class="source">Build Fast With AI</span> · 
+              <a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-8-2026" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Meta, Muse Spark 출시<span class="score-badge">★ 85</span></h4>
+            <p class="summary-line">Meta 초지능 랩이 첫 주력 모델 Muse Spark(내부명 Avocado)를 공개했다.</p>
+            <p class="summary-line">Scale AI와의 140억 달러 파트너십 이후 Google·OpenAI에 정면 도전하는 모델이다.</p>
+            <p class="article-meta">
+              <span class="source">CNBC</span> · 
+              <a href="https://www.cnbc.com/2026/04/08/meta-debuts-first-major-ai-model-since-14-billion-deal-to-bring-in-alexandr-wang.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Fable 5·Mythos 5 출시<span class="score-badge">★ 100</span></h4>
+            <p class="summary-line">코딩·비전·지식 작업에서 최고 성능, 입력 $10/M·출력 $50/M으로 이전 대비 반값이다.</p>
+            <p class="summary-line">Stripe는 Fable 5가 수개월 엔지니어링 작업을 며칠로 단축한다고 평가했다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">미국, Fable 5 접근 중단 명령<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">미국 정부가 특정 코드베이스 읽기 취약점을 이유로 Fable 5·Mythos 5 접근 중단을 명령했다.</p>
+            <p class="summary-line">Anthropic은 따르되 취약점이 경미하고 비보편적임을 공개적으로 반박했다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/fable-mythos-access" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Anthropic 대국민 AI 인식 조사<span class="score-badge">★ 80</span></h4>
+            <p class="summary-line">미국인 5만2천명 조사 결과 64%가 일자리 대체를 AI 최대 우려로 꼽았다.</p>
+            <p class="summary-line">AI 기업 신뢰도 15%로 최하위, 70% 이상이 정부의 AI 규제 참여를 지지했다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/anthropic-public-record" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">TSMC 3nm 가격 15% 인상 전망<span class="score-badge">★ 88</span></h4>
+            <p class="summary-line">AI 수요 급증으로 TSMC 3nm 파운드리 가격이 2026년 하반기에 최대 15% 오를 전망이다.</p>
+            <p class="summary-line">월 17만5천 웨이퍼로 생산량을 늘려도 Nvidia·AMD 등의 수요를 따라가지 못하고 있다.</p>
+            <p class="article-meta">
+              <span class="source">TechNode</span> · 
+              <a href="https://technode.com/2026/06/12/tsmc-3nm-capacity-still-tight-prices-seen-rising-15-in-second-half-of-2026/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Google 반독점 판결 결과<span class="score-badge">★ 91</span></h4>
+            <p class="summary-line">연방법원이 Google의 독점 기본검색 계약 종료와 5년간 검색 데이터 공유를 명령했다.</p>
+            <p class="summary-line">DOJ 요구인 Chrome 매각·AI 투자 제한은 기각돼 구글에 부분 승리로 평가된다.</p>
+            <p class="article-meta">
+              <span class="source">Congressional Research Service / DOJ</span> · 
+              <a href="https://www.congress.gov/crs-product/LSB11362" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js 16.2 출시<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">next dev 시작 속도 400% 향상, 렌더링 50% 빨라졌고 Turbopack 개선 200건 이상이다.</p>
+            <p class="summary-line">에이전트 친화적 create-next-app, Browser Log Forwarding, Agent DevTools가 추가됐다.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/next-16-2" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Vite 8.0 정식 출시<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">esbuild+Rollup 이중 번들러를 Rust 기반 Rolldown 단일 번들러로 교체해 빌드 10−30배 빨라졌다.</p>
+            <p class="summary-line">Linear 실사용 기준 빌드 시간 46초에서 6초로 단축, TypeScript 경로 별칭도 기본 지원한다.</p>
+            <p class="article-meta">
+              <span class="source">Vite Official Blog</span> · 
+              <a href="https://vite.dev/blog/announcing-vite8" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">EC2 M9g Graviton5 출시<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">AWS가 192코어·PCIe Gen6·DDR5-8800 메모리 탑재 Graviton5 기반 EC2 M9g 인스턴스를 출시했다.</p>
+            <p class="summary-line">Graviton4 대비 컴퓨팅 25%, ML 추론 35%, 데이터베이스 30% 성능 향상, 미국·유럽 먼저 제공된다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/now-available-amazon-ec2-m9g-and-m9gd-instances-powered-by-new-aws-graviton5-processors/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
