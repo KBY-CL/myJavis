@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-06-22 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 6월 22일 (월) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">OpenAI, 1조 달러 IPO 신청<span class="score-badge">★ 0.95</span></h4>
+            <p class="summary-line">OpenAI가 기업 가치 최대 1조 달러를 목표로 미국 IPO를 비공개 신청했다.</p>
+            <p class="summary-line">ChatGPT 주간 활성 사용자 9억 명, 월 매출 20억 달러에 달한다.</p>
+            <p class="article-meta">
+              <span class="source">Al Jazeera</span> · 
+              <a href="https://www.aljazeera.com/economy/2026/6/8/tech-giant-openai-files-for-us-initial-public-offering" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Google I/O 2026 Gemini 대규모 업데이트<span class="score-badge">★ 0.92</span></h4>
+            <p class="summary-line">자율 실행 AI 비서 Gemini Spark와 동영상 생성 Gemini Omni가 공개됐다.</p>
+            <p class="summary-line">Gemini 3.5 Flash가 새로운 기본 기업용 모델로 채택됐다.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude-at-io-2026/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">6월 LLM 12개 모델 출시<span class="score-badge">★ 0.9</span></h4>
+            <p class="summary-line">6월 첫 2주간 OpenAI·Google·Meta 및 중국 AI 기업들이 12개 프론티어 모델을 출시했다.</p>
+            <p class="summary-line">글로벌 LLM 경쟁이 전례 없는 속도로 심화되고 있음을 보여준다.</p>
+            <p class="article-meta">
+              <span class="source">Presenc AI</span> · 
+              <a href="https://presenc.ai/research/june-2026-llm-release-roundup" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Fable 5·Mythos 5 출시<span class="score-badge">★ 1</span></h4>
+            <p class="summary-line">Anthropic이 Claude Fable 5와 Mythos 5를 공개했다. 수백만 토큰 컨텍스트를 지원하며 SW 엔지니어링·비전 등 최고 수준 성능을 발휘한다.</p>
+            <p class="summary-line">6월 12일 미국 정부 수출통제 지침으로 두 모델 모두 일부 접근이 중단됐다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">삼성 파운드리, Nvidia 등 신규 고객 확보<span class="score-badge">★ 0.92</span></h4>
+            <p class="summary-line">삼성 파운드리가 Nvidia·Tesla·AMD·Google·Qualcomm을 신규 고객으로 확보했다.</p>
+            <p class="summary-line">2nm GAA 공정 수율 60% 돌파로 양산 돌입, 2026년 3분기 흑자 전환이 기대된다.</p>
+            <p class="article-meta">
+              <span class="source">TechSpot</span> · 
+              <a href="https://www.techspot.com/news/112800-samsung-foundry-booming-tsmc-struggles-demand-bags-nvidia.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js 16 출시<span class="score-badge">★ 0.97</span></h4>
+            <p class="summary-line">Turbopack이 기본 번들러로 채택돼 빌드 최대 5배, Fast Refresh 최대 10배 빨라졌다.</p>
+            <p class="summary-line">&#39;use cache&#39; 디렉티브, proxy.ts, React 19.2 기능이 번들에 포함됐다.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/next-16" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">React 19.2, View Transitions 통합<span class="score-badge">★ 0.95</span></h4>
+            <p class="summary-line">브라우저 네이티브 View Transitions API가 React 렌더링 모델에 직접 통합됐다.</p>
+            <p class="summary-line">Activity 컴포넌트와 useEffectEvent 훅이 추가됐다.</p>
+            <p class="article-meta">
+              <span class="source">React Blog</span> · 
+              <a href="https://react.dev/blog/2025/10/01/react-19-2" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Deno 2.8, Node.js 호환성 76%로<span class="score-badge">★ 0.91</span></h4>
+            <p class="summary-line">Node.js 호환성이 42%에서 76.4%로 향상됐고 npm 콜드 인스톨이 3.66배 빨라졌다.</p>
+            <p class="summary-line">TypeScript 6.0.3, 내장 CPU 프로파일러, Chrome DevTools 네트워크 검사 기능이 추가됐다.</p>
+            <p class="article-meta">
+              <span class="source">Deno Blog</span> · 
+              <a href="https://deno.com/blog/v2.8" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">EC2 G7, NVIDIA Blackwell GPU 탑재<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">AWS가 NVIDIA RTX PRO 4500 Blackwell GPU 탑재 EC2 G7 인스턴스를 출시했다.</p>
+            <p class="summary-line">G6 대비 AI 추론 4.6배·그래픽 2.1배 성능 향상, GPU당 32GB 메모리와 700Gbps EFA 제공.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/announcing-amazon-ec2-g7-instances-accelerated-by-nvidia-rtx-pro-4500-blackwell-server-edition-gpus/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">AWS Summit NYC 2026 주요 발표<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Bedrock AgentCore 강화, S3 Annotations(객체당 1GB 메타데이터), WAF Bot Monetization 등이 발표됐다.</p>
+            <p class="summary-line">ECS 고해상도 메트릭으로 오토스케일링 감지 속도가 4.2배 빨라졌고, Kiro iOS 미리보기도 공개됐다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-aws-summit-in-new-york-2026/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
