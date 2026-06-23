@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-06-24 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 6월 24일 (수) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Mistral, OCR 4 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Mistral이 문서 구조 추출 특화 OCR 4 모델을 출시했다.</p>
+            <p class="summary-line">170개 언어 지원, OlmOCRBench 85.20점으로 경쟁 모델 대비 72% 승률 기록.</p>
+            <p class="article-meta">
+              <span class="source">Mistral AI Blog</span> · 
+              <a href="https://mistral.ai/news/ocr-4/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Tag 베타 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Anthropic이 Slack에 Claude를 팀원으로 통합하는 Claude Tag를 베타 출시했다.</p>
+            <p class="summary-line">Anthropic 내부 팀의 코드 65%가 이미 Claude Tag로 작성되고 있다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/introducing-claude-tag" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Code 주간 업데이트<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Claude Code v2.1.181~186에서 위험한 git 명령어 자동 차단 기능이 추가됐다.</p>
+            <p class="summary-line">MCP CLI 인증 명령어(login/logout)도 v2.1.186에서 새로 도입됐다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic (Claude Code Docs)</span> · 
+              <a href="https://code.claude.com/docs/en/whats-new" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Agent SDK 과금 변경 유예<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Anthropic이 6월 15일 예정했던 Agent SDK 별도 크레딧 풀 전환을 보류했다.</p>
+            <p class="summary-line">기존 구독 한도로 계속 이용 가능하며, 변경 전 사전 공지 예정이다.</p>
+            <p class="article-meta">
+              <span class="source">Digital Applied</span> · 
+              <a href="https://www.digitalapplied.com/blog/anthropic-claude-credit-overhaul-june-15-2026" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">FortiBleed 대규모 유출<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">194개국 약 7만 5천 대 FortiGate 방화벽 자격증명이 FortiBleed 캠페인으로 탈취됐다.</p>
+            <p class="summary-line">정부·금융·의료 등 주요 인프라가 피해를 입었으며 CISA가 긴급 보안 강화 권고를 발령했다.</p>
+            <p class="article-meta">
+              <span class="source">BleepingComputer</span> · 
+              <a href="https://www.bleepingcomputer.com/news/security/fortibleed-leak-exposes-fortinet-vpn-credentials-for-73-000-devices/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">TypeScript 6.0 정식 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">TypeScript 6.0이 출시되며 strict 모드 기본 활성화, ES2015 최소 타깃 등 대규모 변경이 적용됐다.</p>
+            <p class="summary-line">다음 버전 TS 7.0은 Go 언어로 재작성해 10배 성능 향상을 목표로 한다.</p>
+            <p class="article-meta">
+              <span class="source">TypeScript Blog (Microsoft)</span> · 
+              <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Vite 8.0 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Vite 8이 Rust 기반 Rolldown을 단일 번들러로 채택해 프로덕션 빌드를 10~30배 가속했다.</p>
+            <p class="summary-line">Linear는 빌드 시간이 46초에서 6초로 단축되는 실제 성과를 보였다.</p>
+            <p class="article-meta">
+              <span class="source">Vite Blog</span> · 
+              <a href="https://vite.dev/blog/announcing-vite8" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Next.js 16.3 카나리 진행<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Next.js v16.3.0-canary.61이 Cached Navigations 전역 opt-in과 Turbopack 개선을 추가했다.</p>
+            <p class="summary-line">Rspack 2.0 업그레이드 및 실험적 React Compiler 지원도 포함됐다.</p>
+            <p class="article-meta">
+              <span class="source">Next.js GitHub Releases</span> · 
+              <a href="https://github.com/vercel/next.js/releases/tag/v16.3.0-canary.61" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Lambda MicroVMs 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">AWS Lambda가 Firecracker 기반 MicroVM을 서버리스 컴퓨트로 새로 제공한다.</p>
+            <p class="summary-line">최대 16 vCPU, 32GB 메모리, 8시간 실행을 지원하며 멀티테넌트 AI 서비스에 활용된다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">AWS Summit NY 2026 발표<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">AWS Summit NY 2026에서 NVIDIA Blackwell GPU 탑재 EC2 G7 인스턴스 등이 공개됐다.</p>
+            <p class="summary-line">S3 Annotations, WAF Bot Control AI 트래픽 수익화 등 AI 인프라 발표도 이어졌다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-aws-summit-in-new-york-2026/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
