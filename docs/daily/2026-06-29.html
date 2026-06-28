@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-06-29 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 6월 29일 (월) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">OpenAI, GPT-5.6 출시 제한<span class="score-badge">★ 97</span></h4>
+            <p class="summary-line">미 정부 요청으로 GPT-5.6 패밀리(Sol·Terra·Luna) 배포를 소수 파트너로 제한했다.</p>
+            <p class="summary-line">Sol의 &#39;ultra&#39; 추론 모드는 Terminal-Bench 2.1 SOTA를 달성, 입력 $5/백만 토큰.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Gemini 3.5 Flash 정식 출시<span class="score-badge">★ 90</span></h4>
+            <p class="summary-line">Google이 Gemini 3.5 Flash를 GA로 전환하고 Computer Use를 퍼블릭 프리뷰로 공개했다.</p>
+            <p class="summary-line">Agent Gateway·Observability·Registry가 GA, Deep Research Agent는 프리뷰 단계.</p>
+            <p class="article-meta">
+              <span class="source">Releasebot / Google Cloud</span> · 
+              <a href="https://releasebot.io/updates/google/gemini-enterprise-agent-platform" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Meta, AI 인프라 $270억 계약<span class="score-badge">★ 88</span></h4>
+            <p class="summary-line">Meta가 Nebius와 5년간 $270억 규모 AI 인프라 계약을 체결했다.</p>
+            <p class="summary-line">Nvidia Vera Rubin 플랫폼 대규모 배포 포함, 텍사스 데이터센터 투자도 $10억→$100억으로 확대.</p>
+            <p class="article-meta">
+              <span class="source">AI at Meta / Axios</span> · 
+              <a href="https://ai.meta.com/blog/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Fable 5·Mythos 5 출시<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">Anthropic이 최고 성능 모델 Claude Fable 5와 Mythos 5를 공개했다.</p>
+            <p class="summary-line">Fable 5는 100만 토큰 컨텍스트·128K 출력 지원, 입력 $10/백만 토큰.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Tag, Slack 연동 출시<span class="score-badge">★ 90</span></h4>
+            <p class="summary-line">Anthropic이 Slack에서 @Claude를 태그해 협업하는 Claude Tag 베타를 공개했다.</p>
+            <p class="summary-line">채널 히스토리를 학습해 비동기로 작동하며, Enterprise·Team 고객 대상 제공.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/introducing-claude-tag" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Apple, 메모리 부족으로 가격 인상<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">Apple이 DRAM 가격 급등(Q1 +98%)으로 MacBook·iPad 가격을 최대 $300 올렸다.</p>
+            <p class="summary-line">Apple 주가는 당일 6% 이상 하락, Microsoft도 Xbox 가격을 $100~$150 인상 예고.</p>
+            <p class="article-meta">
+              <span class="source">CNN Business</span> · 
+              <a href="https://www.cnn.com/2026/06/25/tech/apple-hikes-the-prices-of-macbooks-and-ipads-because-of-memory-chip-shortage" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">TypeScript 7.0 RC 공개<span class="score-badge">★ 97</span></h4>
+            <p class="summary-line">Microsoft가 Go로 재작성한 TypeScript 7.0 RC를 출시해 타입 체킹 속도를 약 10배 개선했다.</p>
+            <p class="summary-line">VS Code 150만 줄 코드베이스 체킹이 89초에서 8초로 단축됐다.</p>
+            <p class="article-meta">
+              <span class="source">TypeScript Blog</span> · 
+              <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-rc/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Next.js 16.3 즉각 탐색 지원<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">Next.js 16.3 프리뷰가 SPA 수준의 즉각 탐색을 서버 렌더링 앱에서 지원한다.</p>
+            <p class="summary-line">Stream·Cache·Block 세 전략과 Partial Prefetching으로 페이지 전환 속도를 개선했다.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/next-16-3-instant-navigations" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AWS Lambda, MicroVM 도입<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">AWS Lambda가 Firecracker 기반 MicroVM으로 VM 수준의 격리 샌드박스를 제공한다.</p>
+            <p class="summary-line">최대 16 vCPU·32GB 메모리·8시간 상태 유지 지원, 4개 리전에서 이용 가능.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">EC2 G7, Blackwell GPU 탑재<span class="score-badge">★ 90</span></h4>
+            <p class="summary-line">AWS가 NVIDIA RTX PRO 4500 Blackwell GPU를 탑재한 EC2 G7 인스턴스를 출시했다.</p>
+            <p class="summary-line">G6 대비 AI 추론 4.6배·그래픽 2.1배 향상, 네트워크 대역폭 700Gbps 지원.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/announcing-amazon-ec2-g7-instances-accelerated-by-nvidia-rtx-pro-4500-blackwell-server-edition-gpus/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
