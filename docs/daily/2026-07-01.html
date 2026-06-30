@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-07-01 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 7월 1일 (수) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">OpenAI, GPT-5.6 제한 공개<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">OpenAI가 GPT-5.6 시리즈(Sol·Terra·Luna)를 미 정부 감독 하에 20개 파트너에만 제한 공개했다.</p>
+            <p class="summary-line">Sol은 플래그십, Terra는 GPT-5.5 대비 2배 저렴, Luna는 초고속·저비용 모델로 7월 일반 출시 예정.</p>
+            <p class="article-meta">
+              <span class="source">VentureBeat</span> · 
+              <a href="https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Google, Meta Gemini 공급 제한<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Google이 컴퓨트 공급 부족으로 Gemini 앱 사용량에 제한을 걸어 Meta 내부 AI 프로젝트가 지연됐다.</p>
+            <p class="summary-line">Google Cloud 수주 잔고는 2026년 1분기에 $4,600억으로 두 배 급증, AI 컴퓨트 구조적 부족 심화.</p>
+            <p class="article-meta">
+              <span class="source">Cybernews</span> · 
+              <a href="https://cybernews.com/ai-news/google-meta-gemini-constraints/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Sonnet 5 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Anthropic이 멀티스텝 추론·툴 사용·코딩에 강화된 Claude Sonnet 5를 출시했다.</p>
+            <p class="summary-line">Opus 4.8 수준 성능에 입력 $2~3/백만 토큰으로 저렴하며 Claude Code 포함 전 플랜에서 이용 가능.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Science 베타 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Anthropic이 유전체학·단백질체학 등 60여 개 과학 DB를 통합한 AI 연구 워크벤치 Claude Science를 공개했다.</p>
+            <p class="summary-line">재현 가능한 출판용 결과물 생성 및 개인·기관 인프라 컴퓨트 관리 지원, macOS·Linux 제공.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">RAM 부족으로 PC 가격 급등<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">AI 데이터센터가 DRAM 웨이퍼 생산량의 23%를 소비하면서 Apple MacBook Pro 가격이 $300 인상됐다.</p>
+            <p class="summary-line">분석가들은 2026년 4분기에 추가 30~40% 가격 인상을 예고하며, 삼성·SK하이닉스·Micron은 반독점 소송에 직면.</p>
+            <p class="article-meta">
+              <span class="source">Fortune</span> · 
+              <a href="https://fortune.com/2026/06/28/apple-mac-price-hikes-memory-chip-shortage-ai-ram-ageddon/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">EU, AWS·Azure 게이트키퍼 지정<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">유럽위원회가 Microsoft Azure와 AWS를 DMA 게이트키퍼로 지정 예비 결론을 발표, 클라우드 인프라로는 최초다.</p>
+            <p class="summary-line">7월 1일 이해관계자 라운드테이블 예정, 최종 지정 시 6개월 이내 DMA 규정 준수 의무 발생.</p>
+            <p class="article-meta">
+              <span class="source">Windows Forum</span> · 
+              <a href="https://windowsforum.com/threads/eu-signals-dma-gatekeeper-status-for-aws-and-azure-what-it-means-for-cloud-lock-in.431667/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js 16.3 즉각 탐색<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Next.js 16.3 프리뷰가 Suspense 스트리밍·캐시로 서버 앱에서 SPA 수준의 즉각 탐색을 지원한다.</p>
+            <p class="summary-line">Partial Prefetching으로 링크당 요청 대신 라우트별 재사용 shell을 prefetch해 네트워크 부하를 절감했다.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/next-16-3-instant-navigations" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Vite 8.1 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Vite 8.1이 실험적 번들드 개발 모드를 도입해 대형 앱에서 개발 서버 시작 15배, 전체 리로드 10배 단축했다.</p>
+            <p class="summary-line">Chunk Import Map으로 해시 캐스케이딩 해소, WebAssembly ESM 직접 임포트도 지원한다.</p>
+            <p class="article-meta">
+              <span class="source">Vite Blog</span> · 
+              <a href="https://vite.dev/blog/announcing-vite8-1" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Turbopack Next.js 16.3 업데이트<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Next.js 16.3 Turbopack이 Memory Eviction으로 장시간 개발 세션 메모리 무한 증가 문제를 해소했다.</p>
+            <p class="summary-line">Persistent Cache로 연속 빌드 속도 개선, Rust 기반 React Compiler와 Vite 호환 import.meta.glob 추가.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/next-16-3-turbopack" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">EC2 C9g, Graviton5 정식 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">AWS가 Graviton5 기반 EC2 C9g·C9gd 인스턴스를 GA로 출시, Graviton4 대비 vCPU당 최대 25% 성능 향상했다.</p>
+            <p class="summary-line">DDR5·L3 캐시 5배·100Gbps 네트워크 지원, 미국·유럽 3개 리전에서 즉시 사용 가능하며 추가 리전 확대 예정.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/amazon-ec2-c9g-and-c9gd-instances-powered-by-aws-graviton5-processors-are-now-available/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
