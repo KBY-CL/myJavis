@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-07-03 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 7월 3일 (금) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">GPT-5.6 Sol 미리보기<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">OpenAI가 GPT-5.6 Sol의 제한적 미리보기를 신뢰 파트너 20곳에 제공했다.</p>
+            <p class="summary-line">Cerebras 하드웨어에서 초당 750 토큰, 현재 대비 15배 속도를 달성했다.</p>
+            <p class="article-meta">
+              <span class="source">OpenAI</span> · 
+              <a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Gemini 3.5 Flash 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Google이 Gemini 3.5 Flash를 공개 출시, 월간 활성 사용자 9억 명을 돌파했다.</p>
+            <p class="summary-line">개인 AI 에이전트 Gemini Spark와 동영상 생성 기능 Gemini Omni도 함께 공개했다.</p>
+            <p class="article-meta">
+              <span class="source">Google Gemini</span> · 
+              <a href="https://gemini.google/release-notes/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Sonnet 5 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Anthropic이 가장 에이전틱한 Sonnet 모델로 Claude Sonnet 5를 6월 30일 출시했다.</p>
+            <p class="summary-line">추론·코딩·도구 사용이 크게 향상, 8월까지 입력 $2/백만 토큰 도입가가 적용된다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Science 베타 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Anthropic이 유전체·단백질·화학 등 60개 이상 DB를 탑재한 과학 AI 워크벤치를 출시했다.</p>
+            <p class="summary-line">유료 구독자 전체 이용 가능, 최대 50개 프로젝트에 3만 달러 컴퓨팅 크레딧도 지원한다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">EU, Google에 5.7조 벌금 확정<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">EU 최고법원이 Android 반독점 위반으로 Google에 부과한 41억 유로 벌금을 확정했다.</p>
+            <p class="summary-line">Google의 최종 항소가 기각되어 스마트폰 선탑재 강제 행위가 불법으로 최종 판결됐다.</p>
+            <p class="article-meta">
+              <span class="source">CNBC</span> · 
+              <a href="https://www.cnbc.com/2026/07/02/alphabet-google-android-eu-antitrust-fine-4-1-billion-euro-appeal.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Google, Klarna에 2조 배상 명령<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">스웨덴 법원이 가격비교 서비스 차별로 Google에 143억 크로나 배상을 명령했다.</p>
+            <p class="summary-line">스웨덴 역대 최대 경쟁법 손해배상으로, 10년간 자사 쇼핑 서비스 우대가 원인이다.</p>
+            <p class="article-meta">
+              <span class="source">U.S. News &amp; World Report</span> · 
+              <a href="https://money.usnews.com/investing/news/articles/2026-07-01/swedish-court-says-google-is-to-pay-1-5-billion-to-klarna-in-antitrust-damages" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js 16.3 Turbopack<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Next.js 16.3이 Turbopack 개선으로 개발 서버 메모리를 최대 90% 절감했다.</p>
+            <p class="summary-line">빌드 캐시로 최대 5.5배 빨라지고 Rust 기반 React Compiler 실험 지원도 추가됐다.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/next-16-3-turbopack" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Chrome, 에이전트 웹 API 공개<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Google I/O 2026에서 HTML-in-Canvas, Element View Transitions 등 15개 API가 발표됐다.</p>
+            <p class="summary-line">WebMCP 표준으로 웹사이트가 브라우저 AI 에이전트에게 구조적 도구를 제공할 수 있게 됐다.</p>
+            <p class="article-meta">
+              <span class="source">Chrome for Developers</span> · 
+              <a href="https://developer.chrome.com/blog/chrome-at-io26" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">EC2 Graviton5 인스턴스 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">AWS가 Graviton5 기반 EC2 C9g/C9gd 인스턴스를 출시, 이전 대비 vCPU당 성능 25% 향상됐다.</p>
+            <p class="summary-line">DDR5 메모리, L3 캐시 5배 확대, 강화된 보안을 위한 Nitro 격리 엔진이 적용됐다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/amazon-ec2-c9g-and-c9gd-instances-powered-by-aws-graviton5-processors-are-now-available/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Lambda MicroVM 격리 샌드박스<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">AWS Lambda가 Firecracker 기반 MicroVM을 도입, 세션 간 커널을 완전 격리한다.</p>
+            <p class="summary-line">최대 8시간 실행, 세션 상태 유지, 비용 절감을 위한 자동 일시정지를 지원한다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
