@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-07-08 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 7월 8일 (수) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">GPT-5.6 Sol 프리뷰 공개<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">OpenAI가 GPT-5.6 Sol·Terra·Luna 세 모델을 공개하며 최대 1.5M 토큰 컨텍스트와 멀티스텝 에이전트 신뢰성을 강화했다.</p>
+            <p class="summary-line">초기 접근은 정부 승인 파트너 약 20곳에 한정되며 수주 내 ChatGPT·API 전면 공개가 예정됐다.</p>
+            <p class="article-meta">
+              <span class="source">OpenAI</span> · 
+              <a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Gemini 3.5 Pro 7/17 출시<span class="score-badge">★ 88</span></h4>
+            <p class="summary-line">Google DeepMind가 Gemini 3.5 Pro를 기존 아키텍처 전면 폐기 후 재설계해 출시일을 7월 17일로 연기했다.</p>
+            <p class="summary-line">2M 토큰 컨텍스트, 심층 추론 레이어, 자율 워크플로 기능을 탑재하며 수학·SVG·3D 모델링 성능을 대폭 개선했다.</p>
+            <p class="article-meta">
+              <span class="source">BigGo Finance</span> · 
+              <a href="https://finance.biggo.com/news/6f0c6bb2-795f-4c57-9d09-6db691d7638a" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Sonnet 5 정식 출시<span class="score-badge">★ 98</span></h4>
+            <p class="summary-line">Anthropic이 추론·도구 사용·코딩에서 역대 가장 뛰어난 에이전틱 성능의 Claude Sonnet 5를 출시했다.</p>
+            <p class="summary-line">Free·Pro 플랜 기본 모델로 설정됐으며 8월 31일까지 입력 $2/백만 토큰 프로모션 가격이 적용된다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Code 개발 비하인드<span class="score-badge">★ 90</span></h4>
+            <p class="summary-line">Anthropic이 Claude Code가 사내 CLI 도구에서 주력 코딩 에이전트로 진화한 과정을 공개했다.</p>
+            <p class="summary-line">연구자·엔지니어·초기 사용자들의 증언으로 제품 철학과 설계 결정 과정을 상세히 다뤘다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/features/making-of-claude-code" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">삼성 Q2 영업익 89.4조 역대 최고<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">삼성전자가 AI 데이터센터 메모리 수요 급증으로 Q2 영업이익 89.4조 원을 기록해 전년 대비 1,810% 급등했다.</p>
+            <p class="summary-line">3분기 연속 최고 기록에도 막대한 설비투자 우려로 서울 증시에서 주가가 8% 이상 하락했다.</p>
+            <p class="article-meta">
+              <span class="source">CNBC</span> · 
+              <a href="https://www.cnbc.com/2026/07/07/samsung-electronics-preliminary-second-quarter-profit-hits-fresh-high.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">240억 개 계정정보 대규모 유출<span class="score-badge">★ 88</span></h4>
+            <p class="summary-line">Cybernews 연구팀이 36개 출처에서 수집된 240억 개 이상의 계정 정보를 담은 8.3TB Elasticsearch 클러스터를 발견했다.</p>
+            <p class="summary-line">평문 비밀번호와 CVE 익스플로잇 참조가 포함돼 크리덴셜 스터핑 공격에 즉시 활용 가능한 수준이었다.</p>
+            <p class="article-meta">
+              <span class="source">Security Affairs</span> · 
+              <a href="https://securityaffairs.com/193864/security/24-billion-stolen-credentials-exposed-in-massive-data-leak.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Vite 8.1 번들드 개발 모드<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">Vite 8.1이 실험적 번들드 개발 모드를 도입해 시작 속도 최대 15배, 전체 페이지 리로드 10배 개선을 달성했다.</p>
+            <p class="summary-line">청크 임포트 맵, WebAssembly ESM 직접 임포트, Lightning CSS 개선도 함께 포함됐다.</p>
+            <p class="article-meta">
+              <span class="source">Vite Official Blog</span> · 
+              <a href="https://vite.dev/blog/announcing-vite8-1" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Node.js v22.18 TS 스트리핑 기본화<span class="score-badge">★ 88</span></h4>
+            <p class="summary-line">Node.js v22.18.0 LTS가 TypeScript 타입 스트리핑을 기본 활성화해 추가 플래그 없이 .ts 파일을 직접 실행할 수 있다.</p>
+            <p class="summary-line">ESM의 import.meta.main, SQLite readBigInts 지원, fileURLToPathBuffer API도 새로 추가됐다.</p>
+            <p class="article-meta">
+              <span class="source">Node.js Official Blog</span> · 
+              <a href="https://nodejs.org/en/blog/release/v22.18.0" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">EC2 Graviton5 C9g 인스턴스 출시<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">AWS가 Graviton5 기반 EC2 C9g/C9gd 인스턴스를 출시해 C8g 대비 vCPU당 성능 25% 향상, 패킷 처리 3배 개선을 제공한다.</p>
+            <p class="summary-line">DDR5 8800MT/s 메모리, L3 캐시 5배 확대, 최대 100Gbps 네트워크를 지원하며 미국·유럽 리전에서 가용하다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/amazon-ec2-c9g-and-c9gd-instances-powered-by-aws-graviton5-processors-are-now-available/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">EKS 쿠버네티스 버전 롤백 지원<span class="score-badge">★ 88</span></h4>
+            <p class="summary-line">Amazon EKS가 업그레이드 후 7일 이내 쿠버네티스 컨트롤 플레인을 이전 버전으로 되돌리는 롤백 기능을 추가했다.</p>
+            <p class="summary-line">API 호환성·애드온 호환성·클러스터 상태 자동 점검을 포함하며 추가 비용 없이 전 상용 리전에서 제공된다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/upgrade-amazon-eks-clusters-with-confidence-using-kubernetes-version-rollbacks/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
