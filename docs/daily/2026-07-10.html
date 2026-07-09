@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-07-10 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 7월 10일 (금) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">xAI, Grok 4.5 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">xAI가 코딩·에이전트 특화 모델 Grok 4.5를 공개했다.</p>
+            <p class="summary-line">Claude Opus 4.8보다 60% 저렴한 $2/$6 per M 토큰으로 출시.</p>
+            <p class="article-meta">
+              <span class="source">Axios</span> · 
+              <a href="https://www.axios.com/2026/07/08/spacexai-grok-new-model" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">OpenAI, 자체 AI 칩 공개<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">OpenAI·Broadcom이 LLM 추론 전용 ASIC &#39;Jalapeño&#39;를 발표했다.</p>
+            <p class="summary-line">현 Nvidia GPU 대비 성능당 전력 개선, 비용 약 50% 절감 예상.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Sonnet 5 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Anthropic이 Opus 4.8급 성능의 Claude Sonnet 5를 출시했다.</p>
+            <p class="summary-line">8월 31일까지 API 입력 $2/M, 출력 $10/M 특별가 제공.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Reflect 기능 베타<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Anthropic이 Claude 사용 패턴을 분석하는 &#39;Reflect&#39; 대시보드를 베타 출시했다.</p>
+            <p class="summary-line">조용한 시간 설정·휴식 알림·AI 활용 능력 가이드 기능 포함.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/reflect-with-claude" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">MS, Xbox 직원 4,800명 감축<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Microsoft가 전체 인력의 2.1%인 4,800명을 감원하며 Xbox 구조조정을 단행했다.</p>
+            <p class="summary-line">Ninja Theory 등 4개 스튜디오를 매각하고 Xbox 게임 부문을 대폭 축소한다.</p>
+            <p class="article-meta">
+              <span class="source">CNBC</span> · 
+              <a href="https://www.cnbc.com/2026/07/06/microsoft-cuts-2point1percent-of-employees-as-xbox-unit-plans-to-spin-studios.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">EU, Apple DMA 소송 기각<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">EU 일반법원이 Apple의 DMA 게이트키퍼 지정 취소 소송을 기각했다.</p>
+            <p class="summary-line">iOS·App Store의 단일 플랫폼 서비스 판단 유지, Apple은 EU 최고법원에 항소 가능.</p>
+            <p class="article-meta">
+              <span class="source">JURIST</span> · 
+              <a href="https://www.jurist.org/news/2026/07/eu-general-court-upholds-apples-gatekeeper-designation-under-digital-markets-act/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">TypeScript 7.0 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">MS가 컴파일러를 Go로 재작성한 TypeScript 7.0을 발표했다.</p>
+            <p class="summary-line">빌드 속도가 6.0 대비 약 10배 향상되며 언어 문법은 동일하다.</p>
+            <p class="article-meta">
+              <span class="source">TypeScript Blog (Microsoft)</span> · 
+              <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Next.js 16.3 미리보기<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Next.js 16.3이 SPA 수준의 즉각적 페이지 전환 기능 Instant Navigations를 공개했다.</p>
+            <p class="summary-line">Partial Prefetching으로 링크별 프리페치 요청을 단일 로딩 셸로 통합해 네트워크 부하를 줄인다.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/next-16-3-instant-navigations" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AWS GPU 요금 최대 60% 인하<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">AWS가 ECS Managed Instances·EKS Auto Mode의 GPU 관리 요금을 최대 60% 인하했다.</p>
+            <p class="summary-line">G 시리즈 35%, P 시리즈·Trainium 60% 인하, 7월 1일부터 자동 적용.</p>
+            <p class="article-meta">
+              <span class="source">AWS What&#39;s New</span> · 
+              <a href="https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ecs-managed-instances-gpu-price/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">EC2 C9g Graviton5 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">AWS가 Graviton5 기반 EC2 C9g·C9gd 인스턴스를 정식 출시했다.</p>
+            <p class="summary-line">Graviton4 대비 vCPU당 성능 25% 향상, DDR5·100Gbps 네트워크 지원.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/amazon-ec2-c9g-and-c9gd-instances-powered-by-aws-graviton5-processors-are-now-available/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
