@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-07-13 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 7월 13일 (월) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">GPT-5.6 출시<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">OpenAI가 Sol·Terra·Luna 3단계 모델을 공개했다.</p>
+            <p class="summary-line">GPT-5.6 코딩 효율 54% 향상, ChatGPT Work 출시됐다.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Meta 생성 AI 강화<span class="score-badge">★ 85</span></h4>
+            <p class="summary-line">Muse Image·Video 공개, AI 클라우드 사업 추진 중.</p>
+            <p class="summary-line">Meta 내부 모델이 GPT-5.5 수준에 도달했다.</p>
+            <p class="article-meta">
+              <span class="source">Axios</span> · 
+              <a href="https://www.axios.com/2026/07/07/ai-meta-image-generator" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Code 신버전<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Auto mode 기본값 적용, 터미널 멈춤 버그 수정됐다.</p>
+            <p class="summary-line">Bedrock 기본 모델이 Opus 4.8로 업그레이드됐다.</p>
+            <p class="article-meta">
+              <span class="source">Releasebot (Anthropic Claude Code)</span> · 
+              <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">EU Apple 판결<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">EU 법원이 DMA 게이트키퍼 이의 제기를 기각했다.</p>
+            <p class="summary-line">App Store 개방 의무, 미준수 시 매출 10% 제재 위기다.</p>
+            <p class="article-meta">
+              <span class="source">JURIST</span> · 
+              <a href="https://www.jurist.org/news/2026/07/eu-general-court-upholds-apples-gatekeeper-designation-under-digital-markets-act/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">MS Xbox 구조조정<span class="score-badge">★ 88</span></h4>
+            <p class="summary-line">마이크로소프트가 4,800명 감원, Xbox 3,200명 삭감된다.</p>
+            <p class="summary-line">게임 스튜디오 4곳 매각·독립 전환, 최대 규모 구조조정이다.</p>
+            <p class="article-meta">
+              <span class="source">CNBC</span> · 
+              <a href="https://www.cnbc.com/2026/07/06/microsoft-cuts-2point1percent-of-employees-as-xbox-unit-plans-to-spin-studios.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Meta Iris 양산<span class="score-badge">★ 85</span></h4>
+            <p class="summary-line">Meta가 Broadcom·TSMC AI 칩 Iris를 9월 양산한다.</p>
+            <p class="summary-line">Nvidia 의존 줄이고 연내 컴퓨팅 역량 2배 확대 계획이다.</p>
+            <p class="article-meta">
+              <span class="source">Tech Startups</span> · 
+              <a href="https://techstartups.com/2026/07/09/todays-biggest-technology-news-top-tech-stories-shaping-ai-big-tech-cybersecurity-and-startups/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">TypeScript 7.0<span class="score-badge">★ 98</span></h4>
+            <p class="summary-line">Go 언어로 재작성, 빌드 속도 최대 11.9배 빨라졌다.</p>
+            <p class="summary-line">strict 강제·ES5 제거 등 브레이킹 체인지가 포함됐다.</p>
+            <p class="article-meta">
+              <span class="source">TypeScript Blog (Microsoft)</span> · 
+              <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Next.js 16.3<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">영속 캐시 추가로 연속 빌드 속도가 크게 향상됐다.</p>
+            <p class="summary-line">Instant Navigations으로 클라이언트 탐색이 즉각 개선됐다.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog (Vercel)</span> · 
+              <a href="https://nextjs.org/blog" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Bun, Rust로 재작성<span class="score-badge">★ 85</span></h4>
+            <p class="summary-line">Bun이 Zig에서 Rust로 전면 재작성해 메모리 안전성 강화됐다.</p>
+            <p class="summary-line">바이너리 크기 감소, 개발자 API 변화는 최소화됐다.</p>
+            <p class="article-meta">
+              <span class="source">Bun Blog</span> · 
+              <a href="https://bun.com/blog/bun-in-rust" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AWS C9g 출시<span class="score-badge">★ 90</span></h4>
+            <p class="summary-line">Graviton5 기반 C9g·C9gd 인스턴스가 정식 출시됐다.</p>
+            <p class="summary-line">vCPU당 25% 향상, DDR5·100Gbps 네트워크를 제공한다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/amazon-ec2-c9g-and-c9gd-instances-powered-by-aws-graviton5-processors-are-now-available/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
