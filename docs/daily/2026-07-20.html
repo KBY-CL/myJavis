@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-07-20 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 7월 20일 (월) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">GPT-5.6 출시<span class="score-badge">★ 0.97</span></h4>
+            <p class="summary-line">OpenAI가 Sol·Terra·Luna 3단계 GPT-5.6을 공개했다.</p>
+            <p class="summary-line">Cerebras 인프라에서 초당 750 토큰 처리, M365 Copilot 기본 모델이 됐다.</p>
+            <p class="article-meta">
+              <span class="source">OpenAI</span> · 
+              <a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Google AI 6월 업데이트<span class="score-badge">★ 0.91</span></h4>
+            <p class="summary-line">Google이 Gemini 3.5 Flash(Computer Use)와 실시간 70개 언어 번역을 공개했다.</p>
+            <p class="summary-line">오픈소스 Gemma 4 12B도 출시돼 로컬 실행과 멀티모달 처리가 가능해졌다.</p>
+            <p class="article-meta">
+              <span class="source">Google Blog</span> · 
+              <a href="https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Meta Muse Spark 1.1<span class="score-badge">★ 0.88</span></h4>
+            <p class="summary-line">Meta가 100만 토큰 컨텍스트의 에이전트 모델 Muse Spark 1.1을 공개했다.</p>
+            <p class="summary-line">첫 유료 API를 출시했으며 OpenAI·Anthropic 대비 저렴한 가격을 예고했다.</p>
+            <p class="article-meta">
+              <span class="source">Fortune</span> · 
+              <a href="https://fortune.com/2026/07/09/meta-muse-spark-1-1-release-alexandr-wang-superintelligence-labs-mark-zuckerberg/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude Code 29주차<span class="score-badge">★ 0.97</span></h4>
+            <p class="summary-line">게시된 아티팩트에서 MCP 실시간 데이터를 불러오는 기능이 추가됐다.</p>
+            <p class="summary-line">스크린 리더 모드·공유 링크·팀 편집자 역할 등 협업 기능도 도입됐다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic (Claude Code Docs)</span> · 
+              <a href="https://code.claude.com/docs/en/whats-new" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Reflect 출시<span class="score-badge">★ 0.88</span></h4>
+            <p class="summary-line">Anthropic이 AI 사용 패턴을 시각화하는 Reflect 대시보드를 베타 공개했다.</p>
+            <p class="summary-line">활동 요약·기간별 보기·작업 유형 분석을 무료·Pro·Max 사용자에게 제공한다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/reflect-with-claude" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">TSMC Q2 순익 77% 증가<span class="score-badge">★ 0.95</span></h4>
+            <p class="summary-line">TSMC가 Q2 순익 220억 달러로 역대 최고치를 기록했다.</p>
+            <p class="summary-line">미국 애리조나에 1,000억 달러 추가 투자, 총 2,650억 달러 공약을 발표했다.</p>
+            <p class="article-meta">
+              <span class="source">Quartz</span> · 
+              <a href="https://qz.com/tsmc-record-profit-100-billion-arizona-investment-071626" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">2026년 최악의 해킹<span class="score-badge">★ 0.9</span></h4>
+            <p class="summary-line">DOGE 연계 사회보장 DB 유출·의료기기 1만대 파괴 등 대형 사고가 잇따랐다.</p>
+            <p class="summary-line">Klue 침해로 Jamf·HackerOne·LastPass 등 200개사 데이터가 유출됐다.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/07/07/the-worst-hacks-and-breaches-of-2026-so-far/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">TypeScript 7.0 출시<span class="score-badge">★ 0.98</span></h4>
+            <p class="summary-line">Go로 재작성된 컴파일러로 빌드 속도가 최대 12배 빨라졌다.</p>
+            <p class="summary-line">strict 기본 활성화·멀티 스레드 타입 체크 등 대규모 변경이 포함됐다.</p>
+            <p class="article-meta">
+              <span class="source">TypeScript Blog (Microsoft)</span> · 
+              <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Next.js 보안 패치<span class="score-badge">★ 0.92</span></h4>
+            <p class="summary-line">Vercel이 월간 보안 릴리스 프로그램을 도입하고 7월 20일 첫 패치를 예고했다.</p>
+            <p class="summary-line">Next.js 16.2·15.5 대상으로 고위험 4건·중위험 5건 취약점이 수정된다.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog (Vercel)</span> · 
+              <a href="https://nextjs.org/blog/next-security-release-program" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AWS GPU 관리 비용 60% 인하<span class="score-badge">★ 0.95</span></h4>
+            <p class="summary-line">AWS가 EKS Auto Mode·ECS Managed Instances의 GPU 관리 요금을 최대 60% 낮췄다.</p>
+            <p class="summary-line">G시리즈 35%·P시리즈 및 Trainium 60% 인하, 7월 1일부터 자동 적용됐다.</p>
+            <p class="article-meta">
+              <span class="source">AWS What&#39;s New</span> · 
+              <a href="https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-eks-auto-mode-gpu-price/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
