@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-07-24 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 7월 24일 (금) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">OpenAI 지출 대폭 확대<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">OpenAI가 2030년까지 지출 전망을 7500억달러로 상향했다.</p>
+            <p class="summary-line">오라클과 3000억달러 클라우드 계약도 체결했다.</p>
+            <p class="article-meta">
+              <span class="source">Yahoo Finance (WSJ)</span> · 
+              <a href="https://finance.yahoo.com/technology/ai/articles/openai-lifts-planned-compute-spending-144917731.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">AMD, 차세대 AI칩 공개<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">AMD가 AI 랙스케일 시스템 Helios를 공개했다.</p>
+            <p class="summary-line">차세대 GPU MI455X는 MI355X보다 34배 빠르다.</p>
+            <p class="article-meta">
+              <span class="source">ServeTheHome</span> · 
+              <a href="https://www.servethehome.com/amd-advancing-ai-2026-keynote-live-coverage/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude 음성모드 확장<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">음성 모드가 Opus, Sonnet 모델까지 확장됐다.</p>
+            <p class="summary-line">한국어 포함 11개 언어를 모바일/데스크톱서 지원한다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://claude.com/blog/think-through-hard-problems-in-voice-mode" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Code 릴리스<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">코드리뷰가 백그라운드 서브에이전트로 실행된다.</p>
+            <p class="summary-line">스크린리더 모드에 삭제 텍스트 음성 안내가 추가됐다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic (GitHub)</span> · 
+              <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.218" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude 관리형 에이전트<span class="score-badge">★ 7</span></h4>
+            <p class="summary-line">Managed Agents에 effort 레벨 파라미터가 추가됐다.</p>
+            <p class="summary-line">환경/메모리 웹훅이 총 7종 이벤트로 확장됐다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://platform.claude.com/docs/en/release-notes/overview" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">외교원 개인정보 유출<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">국립외교원 시스템이 2025년 4월부터 침해됐다.</p>
+            <p class="summary-line">외교관 350명 포함 최소 6천명 정보가 유출됐다.</p>
+            <p class="article-meta">
+              <span class="source">BleepingComputer</span> · 
+              <a href="https://www.bleepingcomputer.com/news/security/south-korea-discloses-data-breach-impacting-diplomats-worldwide/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">React 컴파일러 재작성<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">React Compiler가 Rust로 전면 재작성됐다.</p>
+            <p class="summary-line">Turbopack 통합 시 컴파일 속도가 40% 이상 빨라진다.</p>
+            <p class="article-meta">
+              <span class="source">InfoQ</span> · 
+              <a href="https://www.infoq.com/news/2026/07/meta-react-compiler-rust/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">shadcn, Aria 지원<span class="score-badge">★ 7</span></h4>
+            <p class="summary-line">shadcn/ui가 React Aria를 3번째 기반으로 추가했다.</p>
+            <p class="summary-line">CLI가 의존성과 스타일 설치를 자동으로 관리한다.</p>
+            <p class="article-meta">
+              <span class="source">shadcn/ui Changelog</span> · 
+              <a href="https://ui.shadcn.com/docs/changelog/2026-07-react-aria" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AgentCore 로그 통합<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">AgentCore가 trace와 로그를 단일 로그그룹으로 통합했다.</p>
+            <p class="summary-line">에이전트별 CloudWatch 로그그룹으로 디버깅이 쉬워졌다.</p>
+            <p class="article-meta">
+              <span class="source">AWS What&#39;s New</span> · 
+              <a href="https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-bedrock-agentcore-unified-observability-single-log-group/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Lambda CMK 암호화<span class="score-badge">★ 7</span></h4>
+            <p class="summary-line">Durable Functions가 KMS 고객관리형 키를 지원한다.</p>
+            <p class="summary-line">금융/헬스케어 등 규제 산업 요건을 충족할 수 있다.</p>
+            <p class="article-meta">
+              <span class="source">AWS What&#39;s New</span> · 
+              <a href="https://aws.amazon.com/about-aws/whats-new/2026/07/durablefunctions-cmk/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
