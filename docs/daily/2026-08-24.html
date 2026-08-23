@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-08-24 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 8월 24일 (월) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Nvidia AI칩 가격인상<span class="score-badge">★ 88</span></h4>
+            <p class="summary-line">Nvidia가 AI 서버 가격을 15% 이상 인상한다.</p>
+            <p class="summary-line">플래그십 Vera Rubin·Blackwell 칩에도 적용된다.</p>
+            <p class="article-meta">
+              <span class="source">Bloomberg</span> · 
+              <a href="https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">OpenAI 안전법 강화요청<span class="score-badge">★ 85</span></h4>
+            <p class="summary-line">OpenAI가 캘리포니아 AI 안전법 강화를 촉구했다.</p>
+            <p class="summary-line">최첨단 모델 모니터링·보안 강화를 제안했다.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Anthropic 상장 추진<span class="score-badge">★ 90</span></h4>
+            <p class="summary-line">SpaceX 기록적 IPO 규모에 맞먹는 상장을 추진한다.</p>
+            <p class="summary-line">2분기 매출 115억달러, 전년대비 14배 성장했다.</p>
+            <p class="article-meta">
+              <span class="source">TheNextWeb (원 출처: Bloomberg)</span> · 
+              <a href="https://thenextweb.com/news/anthropic-ipo-size-match-spacex-record" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Code 신기능<span class="score-badge">★ 85</span></h4>
+            <p class="summary-line">새 /design 스킬로 UI 아트보드 편집이 가능해졌다.</p>
+            <p class="summary-line">간결한 답변 출력스타일 &#39;Concise&#39;가 추가됐다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic (Claude Code Docs)</span> · 
+              <a href="https://code.claude.com/docs/en/whats-new/2026-w34" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude 단백질 설계<span class="score-badge">★ 80</span></h4>
+            <p class="summary-line">Claude가 15개 표적 중 14개 결합단백질 설계 성공.</p>
+            <p class="summary-line">RBX1 표적서 40% 히트율, 평균의 10배 이상.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/research/Claude-accelerates-protein-design" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Meta 1.4조달러 소송<span class="score-badge">★ 92</span></h4>
+            <p class="summary-line">메타가 아동안전 관련 4개주 소송에 직면했다.</p>
+            <p class="summary-line">인스타·페북 중독설계 혐의, 최대 1.4조달러 배상 위기.</p>
+            <p class="article-meta">
+              <span class="source">Fortune</span> · 
+              <a href="https://fortune.com/article/meta-faces-1-4-trillion-threat-stakes-of-case-reach-across-tech-08-20-2026/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">TSMC 인텔에 패키징위탁<span class="score-badge">★ 85</span></h4>
+            <p class="summary-line">TSMC가 CoWoS 물량 일부를 인텔에 맡겼다.</p>
+            <p class="summary-line">AI 가속기 물량 완판, 리드타임 52~78주다.</p>
+            <p class="article-meta">
+              <span class="source">Seoul Economic Daily</span> · 
+              <a href="https://en.sedaily.com/international/2026/08/20/tsmc-turns-to-rival-intel-for-ai-chip-packaging-amid-crunch" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Bun 1.4 Rust전환<span class="score-badge">★ 90</span></h4>
+            <p class="summary-line">Bun 코어가 Zig에서 Rust로 재작성됐다.</p>
+            <p class="summary-line">테스트 1,517개 추가통과, 시작속도 2~2.5배 향상.</p>
+            <p class="article-meta">
+              <span class="source">Bun Blog</span> · 
+              <a href="https://bun.com/blog/bun-v1.4" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Next.js 보안패치 예고<span class="score-badge">★ 85</span></h4>
+            <p class="summary-line">8월 26일 critical 등급 패치 예정이다.</p>
+            <p class="summary-line">버전 16.3.3·15.5.24로 배포된다.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/upcoming-nextjs-security-release-august-2026" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AWS Glue 6.0 출시<span class="score-badge">★ 90</span></h4>
+            <p class="summary-line">AWS Glue 6.0이 최대 30% 저렴해졌다.</p>
+            <p class="summary-line">Spark 4.1·Python 3.13 런타임으로 업그레이드.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/aws-glue-6-0-now-available-with-30-lower-price-and-full-apache-iceberg-v3-support/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
