@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-08-31 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 8월 31일 (월) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">엔비디아, 허깅페이스 인수<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">엔비디아가 허깅페이스를 약 129억 달러에 인수 합의</p>
+            <p class="summary-line">성사되면 엔비디아 역대 최대 규모 인수가 된다</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">오픈AI, Cursor 중단<span class="score-badge">★ 88</span></h4>
+            <p class="summary-line">오픈AI가 11월 12일부로 Cursor 모델 제공을 종료한다</p>
+            <p class="summary-line">커서의 스페이스X 인수에 따른 조치라고 설명했다</p>
+            <p class="article-meta">
+              <span class="source">OpenAI / CNBC</span> · 
+              <a href="https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">세일즈포스 Claude 제휴<span class="score-badge">★ 90</span></h4>
+            <p class="summary-line">세일즈포스와 앤트로픽이 &#39;Claudeforce&#39; 파트너십 발표</p>
+            <p class="summary-line">영업 스킬 37개 담은 플러그인 9월 베타 예정</p>
+            <p class="article-meta">
+              <span class="source">Salesforce</span> · 
+              <a href="https://www.salesforce.com/news/press-releases/2026/08/26/salesforce-and-anthropic-announce-claudeforce/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Code 갱신<span class="score-badge">★ 78</span></h4>
+            <p class="summary-line">제한된 권한의 --restricted 모드가 새로 추가됐다</p>
+            <p class="summary-line">모델 전환 훅과 지출 한도 표시줄도 도입됐다</p>
+            <p class="article-meta">
+              <span class="source">Anthropic (Claude Code Docs)</span> · 
+              <a href="https://code.claude.com/docs/en/changelog#2-1-248" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">애플 신임 CEO 터너스<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">팀 쿡이 물러나고 존 터너스가 9월 1일 CEO 취임</p>
+            <p class="summary-line">쿡은 이사회 의장으로 자리를 옮긴다</p>
+            <p class="article-meta">
+              <span class="source">The Motley Fool</span> · 
+              <a href="https://www.fool.com/investing/2026/08/29/john-ternus-becomes-apple-s-ceo-on-sept-1-here-s-what-history-says-the-first-year-does-to-the-stock/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">맨체스터공항 해킹 유출<span class="score-badge">★ 85</span></h4>
+            <p class="summary-line">맨체스터공항그룹 해킹으로 870만명 정보 유출</p>
+            <p class="summary-line">이메일·전화번호 등 유출, 금융정보는 미포함</p>
+            <p class="article-meta">
+              <span class="source">Bitdefender (HotForSecurity)</span> · 
+              <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/manchester-airports-group-data-breach-8-7-million" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js 보안 패치<span class="score-badge">★ 95</span></h4>
+            <p class="summary-line">Next.js가 치명적 취약점 2건을 긴급 패치했다</p>
+            <p class="summary-line">AVIF 최적화 시 원격코드실행 위험 있어 기능 비활성화</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/august-2026-security-release" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Chrome 152 신기능<span class="score-badge">★ 85</span></h4>
+            <p class="summary-line">CSSPseudoElement가 backdrop 등으로 확장됐다</p>
+            <p class="summary-line">CPU 성능 파악 가능한 신규 API도 추가됐다</p>
+            <p class="article-meta">
+              <span class="source">Chrome for Developers</span> · 
+              <a href="https://developer.chrome.com/blog/new-in-chrome-152?hl=en" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Next.js 앱형 UX<span class="score-badge">★ 80</span></h4>
+            <p class="summary-line">Instant Navigations로 SPA급 전환을 구현하는 법 소개</p>
+            <p class="summary-line">낙관적 업데이트·오프라인 재시도 패턴도 설명</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/building-app-like-experiences-with-nextjs-16-3" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AWS P6-B300 확장<span class="score-badge">★ 70</span></h4>
+            <p class="summary-line">블랙웰 울트라 GPU 탑재 P6-B300 리전이 확대됐다</p>
+            <p class="summary-line">이전 세대 대비 대역폭 2배, 성능 1.5배 향상</p>
+            <p class="article-meta">
+              <span class="source">AWS What&#39;s New</span> · 
+              <a href="https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-p6-b300-instances-available-additional-regions/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
