@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-09-11 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 9월 11일 (금) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">DeepSeek 신모델 공개<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">DeepSeek가 오픈소스로 V4.1-Flash 모델 공개</p>
+            <p class="summary-line">5520억 파라미터, 토큰당 80억~160억 활성화 구조</p>
+            <p class="article-meta">
+              <span class="source">Techstrong.ai</span> · 
+              <a href="https://techstrong.ai/articles/deepseek-unveils-v4-1-flash-model-with-architectural-upgrades-price-cuts-ahead-of-shanghai-ipo/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Anthropic 위협보고서<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Anthropic, Claude 악용 사례 3번째 리포트 발표</p>
+            <p class="summary-line">러시아 조직, 30만건 이상 신원정보 탈취</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude 권한정책 추가<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Managed Agents auto 모드 도입</p>
+            <p class="summary-line">ant sessions connect로 세션 실시간 확인</p>
+            <p class="article-meta">
+              <span class="source">Anthropic (Claude Platform Release Notes)</span> · 
+              <a href="https://platform.claude.com/docs/en/release-notes/overview" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Code 최신화<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">게이트웨이 요금제 지원, WebFetch 버그 수정</p>
+            <p class="summary-line">maxEffortLevel 설정, 시스템프롬프트 스냅샷 옵션 추가</p>
+            <p class="article-meta">
+              <span class="source">Anthropic (Claude Code Docs)</span> · 
+              <a href="https://code.claude.com/docs/en/changelog#2-1-268" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">애플 폴더블 아이폰 공개<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">애플이 첫 폴더블 아이폰 듀오 공개</p>
+            <p class="summary-line">가격 1999달러부터, 10월 23일 판매 시작</p>
+            <p class="article-meta">
+              <span class="source">CNBC</span> · 
+              <a href="https://www.cnbc.com/2026/09/09/apple-event-today-live-updates.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">TSMC 매출 53% 급증<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">TSMC 8월 매출 전년대비 53.3% 급증</p>
+            <p class="summary-line">AI 인프라 수요가 성장 견인, 패키징 공급 타이트</p>
+            <p class="article-meta">
+              <span class="source">Bloomberg</span> · 
+              <a href="https://www.bloomberg.com/news/articles/2026-09-10/tsmc-revenue-rises-53-as-ai-chip-demand-outstrips-supply" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">DOJ 엔비디아 반독점 조사<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">DOJ가 엔비디아-Groq 200억달러 계약 조사</p>
+            <p class="summary-line">M&amp;A 심사 회피 목적인지가 조사 핵심</p>
+            <p class="article-meta">
+              <span class="source">Bloomberg</span> · 
+              <a href="https://www.bloomberg.com/news/articles/2026-09-10/doj-probes-nvidia-s-license-deal-with-groq-on-antitrust-concerns" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">React 19.3 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">View Transitions·Fragment Refs 정식화</p>
+            <p class="summary-line">browser() API로 서버는 Suspense만 트리거</p>
+            <p class="article-meta">
+              <span class="source">React Blog</span> · 
+              <a href="https://react.dev/blog/2026/09/09/react-19-3" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Chrome 153 신기능<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Iterator.zip()으로 이터레이터 동시 순회</p>
+            <p class="summary-line">&lt;camera&gt;, &lt;microphone&gt; 선언형 캡처 엘리먼트</p>
+            <p class="article-meta">
+              <span class="source">Chrome for Developers Blog</span> · 
+              <a href="https://developer.chrome.com/blog/new-in-chrome-153" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AL2027 프리뷰 공개<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">차세대 클라우드 OS AL2027 프리뷰 공개</p>
+            <p class="summary-line">커널 7.1+, SELinux 기본 강제모드 적용</p>
+            <p class="article-meta">
+              <span class="source">AWS What&#39;s New</span> · 
+              <a href="https://aws.amazon.com/about-aws/whats-new/2026/09/announcing-amazon-linux-2027/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
