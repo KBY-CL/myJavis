@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-09-16 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 9월 16일 (수) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Gemini Live 공개<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">구글이 신규 음성 AI 모델을 공개했다.</p>
+            <p class="summary-line">음성 품질 평가에서 82.6점으로 1위를 기록했다.</p>
+            <p class="article-meta">
+              <span class="source">Google Blog</span> · 
+              <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Rubin NVL72 공개<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">엔비디아 차세대 GPU가 TCO 기준 최대 67배 성능을 낸다.</p>
+            <p class="summary-line">실측 성능이 젠슨 황 발표치보다 더 높게 나타났다.</p>
+            <p class="article-meta">
+              <span class="source">SemiAnalysis</span> · 
+              <a href="https://newsletter.semianalysis.com/p/vera-rubin-nvl72-agentic-inference" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Atria Dawn 공개<span class="score-badge">★ 7</span></h4>
+            <p class="summary-line">상하이AI연구소가 744B 규모 에이전틱 모델을 공개했다.</p>
+            <p class="summary-line">가중치를 MIT 라이선스로 전면 개방했다.</p>
+            <p class="article-meta">
+              <span class="source">arXiv (Shanghai AI Laboratory)</span> · 
+              <a href="https://arxiv.org/abs/2609.15818" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">대화 압축 기능 추가<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Claude API에 원하는 시점 대화 압축 기능이 추가됐다.</p>
+            <p class="summary-line">자동 압축과 별도로 백그라운드에서 처리된다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic (Claude Platform Docs)</span> · 
+              <a href="https://platform.claude.com/docs/en/build-with-claude/compaction#compact-on-demand-with-the-compaction-parameter" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Code 신기능<span class="score-badge">★ 7</span></h4>
+            <p class="summary-line">원격 세션 고속 모드와 도메인 제한 기능이 추가됐다.</p>
+            <p class="summary-line">auto-compact가 너무 일찍 발동하던 버그를 수정했다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic (Claude Code Docs)</span> · 
+              <a href="https://code.claude.com/docs/en/changelog#2-1-273" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">메모리 공급난 우려<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">삼성·SK하이닉스 HBM4 재고가 열흘 미만으로 급감했다.</p>
+            <p class="summary-line">인텔은 CPU 가격을 추가로 10% 인상했다.</p>
+            <p class="article-meta">
+              <span class="source">DIGITIMES</span> · 
+              <a href="https://www.digitimes.com/news/a20260914VL200/2026-dram-intel-samsung-tsmc.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">React 19.3 출시<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">View Transitions·Fragment Refs 정식 출시됐다.</p>
+            <p class="summary-line">새 컴포넌트로 화면 전환 애니메이션을 구현할 수 있다.</p>
+            <p class="article-meta">
+              <span class="source">React Blog</span> · 
+              <a href="https://react.dev/blog/2026/09/09/react-19-3" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">사파리 모듈 로더 수정<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">사파리가 top-level await 미지원 문제를 해결했다.</p>
+            <p class="summary-line">구식 JS 로더를 C++로 완전히 재작성했다.</p>
+            <p class="article-meta">
+              <span class="source">WebKit Blog</span> · 
+              <a href="https://webkit.org/blog/18227/fixing-top-level-await-in-safari/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Lambda 타임아웃 확대<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Lambda 관리형 인스턴스 비동기 제한이 90분으로 늘었다.</p>
+            <p class="summary-line">동기 호출은 기존처럼 15분 제한이 유지된다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/compute/announcing-90-minute-function-timeout-on-aws-lambda-managed-instances/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">2세대 Outposts 출시<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">AWS가 단일 랙 2세대 Outposts를 정식 출시했다.</p>
+            <p class="summary-line">최신 x86 인스턴스와 가속 네트워킹을 지원한다.</p>
+            <p class="article-meta">
+              <span class="source">AWS What&#39;s New</span> · 
+              <a href="https://aws.amazon.com/about-aws/whats-new/2026/09/single-rack-aws-outposts/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
