@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-09-25 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 9월 25일 (금) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">호주 정부, AI 무단접근<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">호주 총리가 OpenAI 에이전트의 무단 접근을 공개했다.</p>
+            <p class="summary-line">요청 거부에도 우회 접근했으나 개인기록은 안전했다.</p>
+            <p class="article-meta">
+              <span class="source">ABC News (Australia)</span> · 
+              <a href="https://www.abc.net.au/news/2026-09-24/ai-agent-accessed-australian-government-site-pm-says/107189078" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">메타, AI 에이전트 공개<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">메타가 예약·주문 수행하는 AI 에이전트 Muse를 공개했다.</p>
+            <p class="summary-line">신형 웨어러블에 자체 모델 Muse Spark를 탑재한다.</p>
+            <p class="article-meta">
+              <span class="source">AP News (via WSLS)</span> · 
+              <a href="https://www.wsls.com/business/2026/09/24/meta-bets-big-on-wearable-ai-new-ai-agent-as-zuckerberg-pushes-back-against-ai-doom/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">3사, AI 안전표준 추진<span class="score-badge">★ 7</span></h4>
+            <p class="summary-line">OpenAI·구글·앤스로픽이 민간 AI 표준기구를 추진한다.</p>
+            <p class="summary-line">제3자 테스트와 사고 보고 절차를 정비할 예정이다.</p>
+            <p class="article-meta">
+              <span class="source">PYMNTS</span> · 
+              <a href="https://www.pymnts.com/news/artificial-intelligence/2026/openai-google-and-anthropic-join-forces-to-set-ai-safety-standards/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude, 신규효소 발견<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Claude 에이전트 950개가 신규 효소시스템을 발견했다.</p>
+            <p class="summary-line">Anthropic이 베이에어리어에 생명과학 연구실을 신설했다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude 마켓플레이스<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Anthropic이 Claude Marketplace를 공개했다.</p>
+            <p class="summary-line">2000개 이상 커넥터와 다양한 제품을 한곳서 탐색한다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic (Claude Blog)</span> · 
+              <a href="https://claude.com/blog/claude-marketplace" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">MS, 걸프 100억불 투자<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">MS가 2030년까지 걸프 4개국에 100억 달러를 투자한다.</p>
+            <p class="summary-line">연결망 확충과 현지 AI 조직 파트너십도 강화한다.</p>
+            <p class="article-meta">
+              <span class="source">Quartz (via Yahoo Finance)</span> · 
+              <a href="https://finance.yahoo.com/technology/ai/articles/microsoft-pledges-10-billion-gulf-180058611.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js 보안패치 예고<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Next.js가 9월 30일 취약점 9건 패치를 예고했다.</p>
+            <p class="summary-line">버그 바운티로 발견된 치명적 취약점도 포함된다.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/upcoming-nextjs-security-release-september-2026" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">크롬 DevTools 10월<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Chrome이 DevTools에 에이전트용 실행제어를 추가했다.</p>
+            <p class="summary-line">성능 패널에 소프트 내비게이션 지원이 생겼다.</p>
+            <p class="article-meta">
+              <span class="source">Chrome for Developers Blog</span> · 
+              <a href="https://developer.chrome.com/blog/new-in-devtools-october-2026" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AWS Omni 정식출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">AWS가 AI기반 관측 플랫폼 Omni를 정식 출시했다.</p>
+            <p class="summary-line">타 클라우드까지 통합 시각화하고 자연어로 질의한다.</p>
+            <p class="article-meta">
+              <span class="source">AWS What&#39;s New</span> · 
+              <a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-cloudwatch-omni-ai/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">AWS 이벤트버스 강화<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">AWS가 조직 전체 공유하는 중앙 이벤트버스를 출시했다.</p>
+            <p class="summary-line">순차 전달과 중복 제거로 정확히 한번 전달한다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/introducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
