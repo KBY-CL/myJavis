@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-10-02 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 10월 2일 (금) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Gemini 4 공개<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Google이 Gemini 4 세대 모델을 공개했다.</p>
+            <p class="summary-line">코딩·보안 벤치마크서 경쟁 모델과 대등하다고 주장.</p>
+            <p class="article-meta">
+              <span class="source">Reuters (Investing.com)</span> · 
+              <a href="https://investing.com/news/stock-market-news/google-announces-gemini-4-flagship-ai-model-after-months-of-delays-4925832" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">GPT-6.1 Sol 발표<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">코딩 성능이 개선됐고 토큰 가격은 Astra의 1/5.</p>
+            <p class="summary-line">Ultrafast 모드로 Codex 최대 8배 빠르게 생성.</p>
+            <p class="article-meta">
+              <span class="source">OpenAI Developer Community</span> · 
+              <a href="https://community.openai.com/t/devday-2026-announcements-and-developer-resources/1402006" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Sonnet 5.5 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Anthropic이 Claude Sonnet 5.5를 출시했다.</p>
+            <p class="summary-line">응답 속도 약 30% 향상, API 가격은 동결됐다.</p>
+            <p class="article-meta">
+              <span class="source">Help Net Security</span> · 
+              <a href="https://www.helpnetsecurity.com/2026/09/29/anthropic-claude-sonnet-5-5/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude 효소 발견<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Claude로 박테리오파지의 신규 효소계 ART를 발견.</p>
+            <p class="summary-line">에이전트 약 950개가 21시간 동안 DNA를 탐색.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Bitget 제로데이 해킹<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">서드파티 보안제품 제로데이로 3.875억 달러 탈취.</p>
+            <p class="summary-line">8월 31일 침투 후 9월 25일 출금을 실행했다.</p>
+            <p class="article-meta">
+              <span class="source">BleepingComputer</span> · 
+              <a href="https://www.bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Micron 사상 최대 실적<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">회계 4분기 매출 542.3억 달러, 순이익 377억.</p>
+            <p class="summary-line">FY2026 매출 1,331.9억 달러, AI 메모리 견인.</p>
+            <p class="article-meta">
+              <span class="source">TechPowerUp</span> · 
+              <a href="https://www.techpowerup.com/353278/micron-reports-record-fiscal-fourth-quarter-and-full-year-2026-results" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Tailwind 합류<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Tailwind Labs가 Shopify에 합류했다.</p>
+            <p class="summary-line">MIT 라이선스 유지, Plus 신규 가입은 중단.</p>
+            <p class="article-meta">
+              <span class="source">AlternativeTo</span> · 
+              <a href="https://alternativeto.net/news/2026/9/tailwind-labs-joins-shopify-and-keeps-tailwind-css-mit-licensed/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">SvelteKit 3 RC<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">설정이 vite.config.ts로 이동, $lib는 #lib로 대체.</p>
+            <p class="summary-line">Vite 8과 Svelte 5 필수, shallow routing 통합.</p>
+            <p class="article-meta">
+              <span class="source">Svelte Blog</span> · 
+              <a href="https://svelte.dev/blog/sveltekit-3-release-candidate" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AWS 최적화 에이전트<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">비용·보안·성능 개선안을 주는 AI가 프리뷰 출시.</p>
+            <p class="summary-line">버지니아·오하이오·오레곤, Support 플랜 필요.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">S3 Tables V3 지원<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Iceberg V3 전체 데이터 타입을 지원한다.</p>
+            <p class="summary-line">Deletion vector로 compaction 부담이 줄어든다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-support-all-apache-iceberg-v3-data-types/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
