@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-10-09 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 10월 9일 (금) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Mistral 신모델 프리뷰<span class="score-badge">★ 7</span></h4>
+            <p class="summary-line">보도에 따르면 Large 4 공개 프리뷰가 시작됐다.</p>
+            <p class="summary-line">보도상 1.05조 파라미터 멀티모달 MoE 모델.</p>
+            <p class="article-meta">
+              <span class="source">LetsDataScience</span> · 
+              <a href="https://letsdatascience.com/news/mistral-debuts-large-4-open-weight-model-preview-cbf9e0b5" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Haiku 5.5 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Anthropic이 Haiku 5.5 출시, 평균 약 75% 저렴.</p>
+            <p class="summary-line">100만 토큰당 입력 $0.10, 출력 $0.50.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">이용 정책 개정<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">개정된 Anthropic 이용 정책이 11월 12일 시행된다.</p>
+            <p class="summary-line">허위 계정·영향력 공작을 &#39;기만적 캠페인&#39;으로 통합.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/2026-usage-policy-update" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">사이버 방어 미션<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Anthropic이 방어자 지원 장기 사이버 미션을 발표했다.</p>
+            <p class="summary-line">핵심 인프라 방어 프로그램에 11개 파트너 참여.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/anthropic-cyber-mission" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">MS 서피스 노트북 공개<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Nvidia RTX Spark 칩 탑재, 2,599달러부터 시작.</p>
+            <p class="summary-line">AI 에이전트 데이터 접근 차단 기술 MXC도 발표.</p>
+            <p class="article-meta">
+              <span class="source">BNN Bloomberg</span> · 
+              <a href="https://bnnbloomberg.ca/business/company-news/2026/10/07/microsoft-brings-more-ai-to-pcs-as-it-challenges-apple" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">국방부 인력 데이터 유출<span class="score-badge">★ 7</span></h4>
+            <p class="summary-line">미 국방부 DMDC 시스템에 약 9개월간 무단 접근 발생.</p>
+            <p class="summary-line">약 300만 명의 SSN·생년월일 등 민감 정보 노출.</p>
+            <p class="article-meta">
+              <span class="source">Privacy Guides</span> · 
+              <a href="https://www.privacyguides.org/news/2026/09/29/highly-sensitive-data-of-3-million-in-the-people-in-the-pentagons-system-accessed-by-unauthorized-users/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js 16.4 출시<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Cache Components가 신규 앱에서 기본 활성화됐다.</p>
+            <p class="summary-line">React 19.3 탑재, View Transitions 안정화.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/next-16-4" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Next.js 보안 업데이트<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">10월 14일 업스트림 취약점 3건 긴급 패치 예고.</p>
+            <p class="summary-line">Critical 2건, High 1건, 권고문은 릴리스 시 공개.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/upcoming-nextjs-security-update-october-2026" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AWS 설계 점검 Agent<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">AWS가 Well-Architected Agent 프리뷰 공개.</p>
+            <p class="summary-line">65개 이상 서비스 분석해 비용·보안·성능 개선안 제시.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Bedrock 에이전트 공개<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">OpenAI 기반 Managed Agents가 퍼블릭 프리뷰 출시.</p>
+            <p class="summary-line">DevOps Guru 2027년 9월 지원 종료 등 가용성 변경.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
