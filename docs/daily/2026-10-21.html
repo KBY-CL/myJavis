@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-10-21 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 10월 21일 (수) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">OpenAI 투자 유치설<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">보도에 따르면 OpenAI가 300억 달러 투자 추진.</p>
+            <p class="summary-line">기업가치 1조 4천억 달러 거론, 모두 미확정.</p>
+            <p class="article-meta">
+              <span class="source">TechStartups (Reuters 보도 인용)</span> · 
+              <a href="https://techstartups.com/2026/10/19/openai-seeks-1-4-trillion-valuation-in-30-billion-funding-push-ahead-of-anthropic-ipo/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">OpenAI 휴머노이드 개발<span class="score-badge">★ 7</span></h4>
+            <p class="summary-line">샘 올트먼이 휴머노이드 로봇 개발을 확인했다.</p>
+            <p class="summary-line">2027년 데모 예상, 거리 보행은 수년 뒤 전망.</p>
+            <p class="article-meta">
+              <span class="source">Engadget</span> · 
+              <a href="https://www.engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Anthropic 증류 방어<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Anthropic 발표, 증류 목적 수집량 약 90~99% 감소.</p>
+            <p class="summary-line">방어책은 추론 노출 통제·2단계 분류기·사용량 제한.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/distillation-defenses" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude 플랫폼 업데이트<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Opus 5.5 fast mode가 10월 15일 정식 전환됐다.</p>
+            <p class="summary-line">OpenTelemetry 내보내기 베타 추가, 7개 SDK 지원.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://platform.claude.com/docs/en/release-notes/overview#october-15-2026" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude Code 신기능<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">v2.1.299, 유휴 200K 토큰 대화 자동 압축 추가.</p>
+            <p class="summary-line">/auto-mode-setup 명령 등 신규 기능 추가.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Ahold 사이버 공격<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Ahold Delhaize, 일부 시스템 오프라인 전환.</p>
+            <p class="summary-line">매장은 정상 영업, 네덜란드 앱·배송 일부 중단.</p>
+            <p class="article-meta">
+              <span class="source">BleepingComputer</span> · 
+              <a href="https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">NGINX 긴급 패치 배포<span class="score-badge">★ 7</span></h4>
+            <p class="summary-line">F5가 NGINX 치명적 취약점 3건 긴급 패치 배포.</p>
+            <p class="summary-line">비인증 원격 공격자의 DoS 또는 조건부 코드 실행.</p>
+            <p class="article-meta">
+              <span class="source">BleepingComputer</span> · 
+              <a href="https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">TypeScript 7.1<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">7.1 베타 공개, es2026 target과 lib 안정화.</p>
+            <p class="summary-line">새 프로그래밍 API와 contentMappers 확장자 등록 도입.</p>
+            <p class="article-meta">
+              <span class="source">TypeScript Blog</span> · 
+              <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-1-beta/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">ECS Gateway 공개<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">ALB·WAF 등 인그레스 인프라를 자동 관리하는 기능.</p>
+            <p class="summary-line">호스트 기반 라우팅으로 ALB 하나를 최대 25개 서비스가 공유.</p>
+            <p class="article-meta">
+              <span class="source">AWS Blog</span> · 
+              <a href="https://aws.amazon.com/blogs/aws/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">TorchNeuron 공개<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Trainium용 오픈소스 PyTorch 백엔드 퍼블릭 베타.</p>
+            <p class="summary-line">디바이스를 neuron으로 바꾸면 기존 코드 실행 가능.</p>
+            <p class="article-meta">
+              <span class="source">AWS What&#39;s New</span> · 
+              <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announce-native-pytorch-support-trainium" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
