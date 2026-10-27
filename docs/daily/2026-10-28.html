@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-10-28 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 10월 28일 (수) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Genie 4 공개<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Google DeepMind가 Genie 4 리서치 프리뷰를 공개했다.</p>
+            <p class="summary-line">실시간 오디오 추가, 장면 일관성 최대 2분으로 연장.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Qwen 외부 전송 논란<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Cohere가 Qwen 모델의 외부 서버 전송 시도를 주장했다.</p>
+            <p class="summary-line">연구자들은 스파이설을 일축, 학습 부산물로 봤다.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Anthropic IPO<span class="score-badge">★ 10</span></h4>
+            <p class="summary-line">Anthropic이 SEC에 IPO용 Form S-1을 제출했다.</p>
+            <p class="summary-line">나스닥 상장 예정, 종목 코드는 ANT.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/s1-sec" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">API 2026-10-21<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">직접 호출 시 anthropic-version 헤더를 바꿔야 한다.</p>
+            <p class="summary-line">Python 2.0 등 새 SDK 메이저가 기본 적용.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic (Claude Platform Docs)</span> · 
+              <a href="https://platform.claude.com/docs/en/api/migration-2026-10-21" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Agent Skills 기부<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Anthropic이 Agent Skills를 AAIF에 기부했다.</p>
+            <p class="summary-line">Google·OpenAI 엔지니어도 개인 자격으로 관리한다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Meta 대규모 증자<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Meta, AI 투자용 약 1000억 달러 주식 매각 추진.</p>
+            <p class="summary-line">보통주 청약 5배 초과, Nvidia가 30억 달러 투자.</p>
+            <p class="article-meta">
+              <span class="source">Yahoo Finance</span> · 
+              <a href="https://finance.yahoo.com/markets/article/metas-nearly-100-billion-stock-sale-is-a-turning-point-for-how-big-tech-pays-for-ai-140424769.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">MacBook Pro M6<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Apple이 M6 탑재 14인치 MacBook Pro를 공개했다.</p>
+            <p class="summary-line">1,999달러부터, 11월 6일 출시. 배터리 최대 24시간.</p>
+            <p class="article-meta">
+              <span class="source">Apple Newsroom</span> · 
+              <a href="https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">HTTP2Shell 취약점<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Brotli 디코더 버퍼 오버플로로 원격 코드 실행 가능.</p>
+            <p class="summary-line">Brotli 1.2.1, Node.js 등 긴급 패치 적용 필요.</p>
+            <p class="article-meta">
+              <span class="source">BleepingComputer</span> · 
+              <a href="https://www.bleepingcomputer.com/news/security/critical-http2shell-brotli-vulnerability-triggers-emergency-patches/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Safari 27.2 신기능<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">::field-content 가상 요소가 Select에 추가됐다.</p>
+            <p class="summary-line">flow-tolerance가 fit-tolerance로 이름 변경됐다.</p>
+            <p class="article-meta">
+              <span class="source">WebKit Blog</span> · 
+              <a href="https://webkit.org/blog/18515/webkit-features-for-safari-27-2/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">KMS, ML-KEM 지원<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">AWS KMS가 양자내성 키 캡슐화 ML-KEM을 지원한다.</p>
+            <p class="summary-line">개인 키는 FIPS 140-3 Level 3 HSM에서 보호된다.</p>
+            <p class="article-meta">
+              <span class="source">AWS What&#39;s New</span> · 
+              <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/kms-ml-kem-post-quantum/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
