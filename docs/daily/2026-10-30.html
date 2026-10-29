@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-10-30 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 10월 30일 (금) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Mistral ML4 공개<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Mistral이 1조 파라미터 오픈 웨이트 모델 ML4를 공개했다.</p>
+            <p class="summary-line">온프레미스 배포 가능한 소버린 사이버 방어를 내세웠다.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">OpenAI 반값 모델<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">OpenAI가 기업 자동화용 GPT-6.1 Terra를 공개했다.</p>
+            <p class="summary-line">API 가격이 GPT-5.6 Terra보다 50% 저렴하다.</p>
+            <p class="article-meta">
+              <span class="source">PYMNTS</span> · 
+              <a href="https://www.pymnts.com/news/artificial-intelligence/2026/openai-unveils-half-price-ai-model-to-target-enterprise-automation/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Claude 정부 제휴 확대<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">GSA 계약으로 정부 기관이 Claude를 40% 할인받는다.</p>
+            <p class="summary-line">정부 예상 절감액 약 10억 달러, 사용 기관 약 500곳.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/news/expanding-partnership-gsa" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Claude API 업데이트<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Messages API 최대 요청 크기가 128MB로 늘었다.</p>
+            <p class="summary-line">사용량·비용 조회용 Analytics API 베타가 출시됐다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic (Claude Platform Docs)</span> · 
+              <a href="https://platform.claude.com/docs/en/release-notes/overview" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">엔비디아 허깅페이스 조사<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">DOJ가 엔비디아의 129억 달러 허깅페이스 인수를 검토 중이다.</p>
+            <p class="summary-line">GPU 우선 공급 연계 여부와 유통 채널 장악을 조사한다.</p>
+            <p class="article-meta">
+              <span class="source">Investing.com (Reuters 인용)</span> · 
+              <a href="https://www.investing.com/news/stock-market-news/nvidia-faces-doj-antitrust-scrutiny-over-129b-hugging-face-deal-reuters-says-4980539" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">MS FY27 1분기 실적<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">MS 1분기 매출 923억 달러로 19% 증가했다.</p>
+            <p class="summary-line">Azure 매출은 48% 증가해 가이던스를 웃돌았다.</p>
+            <p class="article-meta">
+              <span class="source">Microsoft Investor Relations</span> · 
+              <a href="https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">3건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">TS 7.1 베타 공개<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">TypeScript 7.1 베타가 공개됐다.</p>
+            <p class="summary-line">import source, es2026 타깃, 새 API가 추가됐다.</p>
+            <p class="article-meta">
+              <span class="source">TypeScript Blog</span> · 
+              <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-1-beta/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Next.js 번들 최적화<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Next.js 16.4가 번들 최적화 에이전트 스킬을 제공한다.</p>
+            <p class="summary-line">Bundle Analyzer에 라우트 요약과 스냅샷 비교가 추가됐다.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/ship-less-javascript-with-ai" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Node.js 보안 패치<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Node.js 26·24·22 보안 릴리스로 취약점 10건이 패치됐다.</p>
+            <p class="summary-line">High 4건 포함, 우회책 없어 즉시 업그레이드 권장.</p>
+            <p class="article-meta">
+              <span class="source">Node.js Blog</span> · 
+              <a href="https://nodejs.org/en/blog/vulnerability/october-2026-security-releases" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">1건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">AI 에이전트용 워크플로<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Step Functions를 AI 에이전트 도구로 노출할 수 있다.</p>
+            <p class="summary-line">결정론적 실행이라 환불 같은 정책 준수 업무에 적합하다.</p>
+            <p class="article-meta">
+              <span class="source">AWS What&#39;s New</span> · 
+              <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/step-functions-workflows-ai-agent-tools/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
