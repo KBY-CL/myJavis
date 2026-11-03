@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📰 2026-11-04 · IT 뉴스 브리핑</title>
+  <style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+    --heading-bg: #f0f4f8;
+    --accent: #0066cc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --fg: #e5e5e5;
+      --muted: #888;
+      --link: #6ab7ff;
+      --border: #2a2a2e;
+      --card-bg: #17171a;
+      --heading-bg: #1a2030;
+      --accent: #6ab7ff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.page-header { margin-bottom: 2rem; }
+  header.page-header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; letter-spacing: -0.02em; }
+  header.page-header .subtitle { color: var(--muted); font-size: 0.95rem; }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .category-block {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background: var(--card-bg);
+    overflow: hidden;
+  }
+  .category-block > summary {
+    cursor: pointer;
+    padding: 0.8rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category-block > summary::-webkit-details-marker { display: none; }
+  .category-block .count { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+  .article-list { padding: 0 1.1rem 0.5rem; }
+  .article-item {
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .article-item:first-child { border-top: none; }
+  .article-title { font-size: 1.02rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .summary-line { font-size: 0.92rem; color: var(--fg); margin-bottom: 0.15rem; opacity: 0.85; }
+  .article-meta { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+  .article-meta a { text-decoration: none; }
+  .article-meta a:hover { text-decoration: underline; }
+  .source { font-weight: 500; }
+  .score-badge {
+    display: inline-block;
+    background: var(--heading-bg);
+    color: var(--accent);
+    font-size: 0.72rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    margin-left: 0.4rem;
+  }
+  .day-section { margin-bottom: 2.5rem; }
+  .day-title {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.85rem;
+    background: var(--heading-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 1rem;
+  }
+  .no-data { color: var(--muted); font-style: italic; padding: 0.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.82rem; color: var(--muted); text-align: center; border-top: 1px solid var(--border); padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+  <a class="back-link" href="../index.html">← 목록으로</a>
+  <header class="page-header">
+    <h1>📰 11월 4일 (수) IT 뉴스</h1>
+    <p class="subtitle">일간 브리핑 · 총 10건</p>
+  </header>
+
+  <main>
+        <details class="category-block" open>
+          <summary>🤖 AI 뉴스<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">ChatGPT 12억 돌파<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">ChatGPT 주간 활성 사용자가 12억 명에 도달했다.</p>
+            <p class="summary-line">OpenAI는 검색 규모가 구글의 약 20%라고 밝혔다.</p>
+            <p class="article-meta">
+              <span class="source">Big Technology</span> · 
+              <a href="https://www.bigtechnology.com/p/openai-chatgpt-search-is-about-20" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Fal, 13억 달러 조달<span class="score-badge">★ 7</span></h4>
+            <p class="summary-line">AI 추론 스타트업 Fal이 시리즈 F로 13억 달러를 조달했다.</p>
+            <p class="summary-line">기업가치는 4월 80억 달러에서 160억 달러로 2배 상승.</p>
+            <p class="article-meta">
+              <span class="source">TechCrunch</span> · 
+              <a href="https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🟠 Claude 업데이트<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">FlashProve 공개<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Anthropic이 zkSNARK로 모델 출처를 증명하는 도구 공개.</p>
+            <p class="summary-line">H100 1장에서 약 110 tokens/s로 증명 생성.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic</span> · 
+              <a href="https://www.anthropic.com/research/provable-inference" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">API 대화 스레드 베타<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">API가 대화를 보관해 새 메시지만 보내면 된다.</p>
+            <p class="summary-line">스레드는 마지막 요청 후 5분이면 만료된다.</p>
+            <p class="article-meta">
+              <span class="source">Anthropic (Claude Platform Docs)</span> · 
+              <a href="https://platform.claude.com/docs/en/release-notes/overview#november-2-2026" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>🔥 IT 핫이슈<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Apple 메모리 비용 부담<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">실적은 예상을 웃돌았지만 주가는 약 3% 하락했다.</p>
+            <p class="summary-line">12월 분기 매출총이익률 가이던스는 45~46%로 예상보다 낮다.</p>
+            <p class="article-meta">
+              <span class="source">CNBC</span> · 
+              <a href="https://www.cnbc.com/2026/11/03/apple-earnings-john-ternus-faces-first-test-amid-high-memory-costs.html" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">TV박스 봇넷 해체<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">구글 등이 안드로이드 TV박스 130만 대 감염 봇넷을 해체했다.</p>
+            <p class="summary-line">구글 등은 제조사 Videostrong이 백도어를 심었다고 결론 내렸다.</p>
+            <p class="article-meta">
+              <span class="source">Krebs on Security</span> · 
+              <a href="https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>💻 웹개발<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Next.js 보안 릴리스<span class="score-badge">★ 9</span></h4>
+            <p class="summary-line">Next.js 16.4.5·15.5.29에서 취약점 7건을 패치했다.</p>
+            <p class="summary-line">High 1건(캐시 교차 노출), Medium 6건.</p>
+            <p class="article-meta">
+              <span class="source">Next.js Blog</span> · 
+              <a href="https://nextjs.org/blog/november-2026-security-release" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">Safari 자동 다크 모드<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Safari 27.3 beta에 옵트인 자동 다크 렌더링 도입.</p>
+            <p class="summary-line">color-scheme에 light dark 선언하면 변환 제외.</p>
+            <p class="article-meta">
+              <span class="source">WebKit Blog</span> · 
+              <a href="https://webkit.org/blog/18541/introducing-adaptive-dark-mode/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+        <details class="category-block" open>
+          <summary>☁️ AWS 클라우드<span class="count">2건</span></summary>
+          <div class="article-list">
+          <article class="article-item">
+            <h4 class="article-title">Redshift RCE 패치<span class="score-badge">★ 8</span></h4>
+            <p class="summary-line">Redshift JDBC 드라이버의 연결 파라미터로 코드 실행 가능.</p>
+            <p class="summary-line">2.3.0 미만 버전은 2.3.0 이상으로 업그레이드해야 한다.</p>
+            <p class="article-meta">
+              <span class="source">AWS Security Bulletin</span> · 
+              <a href="https://aws.amazon.com/security/security-bulletins/2026-168-aws/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          <article class="article-item">
+            <h4 class="article-title">AMI 취약점 스캔<span class="score-badge">★ 7</span></h4>
+            <p class="summary-line">Inspector가 인스턴스 실행 없이 EC2 AMI를 스캔한다.</p>
+            <p class="summary-line">Inspector 지원 상용 리전에서 계정·조직 단위 활성화.</p>
+            <p class="article-meta">
+              <span class="source">AWS What&#39;s New</span> · 
+              <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-amis-scanned-through-inspector/" target="_blank" rel="noopener noreferrer">원문 보기</a>
+            </p>
+          </article>
+          </div>
+        </details>
+  </main>
+
+  <footer>
+    <p>자동화 봇이 생성한 일간 뉴스 브리핑입니다.</p>
+  </footer>
+</body>
+</html>
